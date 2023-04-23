@@ -1,0 +1,2298 @@
+{
+  "metaData": {
+    "version": "1.3.1",
+    "versionNumber": 66305
+  },
+  "projectSettings": {
+    "containers": {
+      "dashboardSettings": {
+      },
+      "input_Output": {
+      },
+      "audioManager": {
+        "audioSettings": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<DEVICESETUP deviceType=\"Windows Audio\" audioOutputDeviceName=\"Speakers (Focusrite Usb Audio)\"\r\n             audioInputDeviceName=\"\" audioDeviceRate=\"48000.0\"/>\r\n"
+      }
+    }
+  },
+  "dashboardManager": {
+    "parameters": [
+      {
+        "value": false,
+        "controlAddress": "/editMode"
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "layout": {
+    "mainLayout": {
+      "type": 1,
+      "width": 1920,
+      "height": 997,
+      "direction": 2,
+      "shifters": [
+        {
+          "type": 1,
+          "width": 1920,
+          "height": 997,
+          "direction": 1,
+          "shifters": [
+            {
+              "type": 1,
+              "width": 1431,
+              "height": 997,
+              "direction": 2,
+              "shifters": [
+                {
+                  "type": 1,
+                  "width": 1431,
+                  "height": 464,
+                  "direction": 1,
+                  "shifters": [
+                    {
+                      "type": 0,
+                      "width": 300,
+                      "height": 464,
+                      "currentContent": "Blocks",
+                      "tabs": [
+                        {
+                          "name": "Blocks"
+                        }
+                      ]
+                    },
+                    {
+                      "type": 0,
+                      "width": 1125,
+                      "height": 464,
+                      "currentContent": "Node Editor",
+                      "tabs": [
+                        {
+                          "name": "Dashboard"
+                        },
+                        {
+                          "name": "Node Editor"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 1,
+                  "width": 1431,
+                  "height": 527,
+                  "direction": 1,
+                  "shifters": [
+                    {
+                      "type": 0,
+                      "width": 918,
+                      "height": 527,
+                      "currentContent": "Props",
+                      "tabs": [
+                        {
+                          "name": "Block Visualizer"
+                        },
+                        {
+                          "name": "Video Preview"
+                        },
+                        {
+                          "name": "Props"
+                        }
+                      ]
+                    },
+                    {
+                      "type": 0,
+                      "width": 507,
+                      "height": 527,
+                      "currentContent": "Logger",
+                      "tabs": [
+                        {
+                          "name": "Logger"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 0,
+              "width": 483,
+              "height": 997,
+              "currentContent": "Inspector",
+              "tabs": [
+                {
+                  "name": "Inspector"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "windows": null
+  },
+  "models": {
+    "parameters": [
+      {
+        "value": 58,
+        "hexMode": false,
+        "controlAddress": "/iconSize"
+      }
+    ],
+    "generic": {
+      "rainbow": {
+        "modelParams": {
+          "parameters": [
+            {
+              "value": 0.2312286794185638,
+              "controlAddress": "/brightness"
+            },
+            {
+              "value": 0.0,
+              "controlAddress": "/offset"
+            },
+            {
+              "value": 0.8900007009506226,
+              "controlAddress": "/speed"
+            },
+            {
+              "value": 0.7199985980987549,
+              "controlAddress": "/density"
+            }
+          ]
+        }
+      },
+      "noise": {
+        "modelParams": {
+          "parameters": [
+            {
+              "value": 0.4334471225738525,
+              "controlAddress": "/brightness"
+            },
+            {
+              "value": 29.4000415802002,
+              "controlAddress": "/scale"
+            }
+          ]
+        },
+        "presets": {
+          "items": [
+            {
+              "niceName": "guitar",
+              "type": "BaseItem",
+              "params": {
+                "parameters": [
+                  {
+                    "value": 0.3777628242969513,
+                    "controlAddress": "/brightness"
+                  },
+                  {
+                    "value": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "controlAddress": "/color"
+                  },
+                  {
+                    "value": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "controlAddress": "/backgroundColor"
+                  },
+                  {
+                    "value": 0.430107593536377,
+                    "controlAddress": "/balance"
+                  },
+                  {
+                    "value": 8.199996948242188,
+                    "controlAddress": "/contrast"
+                  },
+                  {
+                    "value": 23.00004005432129,
+                    "controlAddress": "/scale"
+                  },
+                  {
+                    "value": 1.0,
+                    "controlAddress": "/speed"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/idOffset"
+                  }
+                ]
+              }
+            },
+            {
+              "niceName": "clarinet",
+              "type": "BaseItem",
+              "params": {
+                "parameters": [
+                  {
+                    "value": 0.576745867729187,
+                    "controlAddress": "/brightness"
+                  },
+                  {
+                    "value": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "controlAddress": "/color"
+                  },
+                  {
+                    "value": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "controlAddress": "/backgroundColor"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/balance"
+                  },
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/contrast"
+                  },
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/scale"
+                  },
+                  {
+                    "value": 1.0,
+                    "controlAddress": "/speed"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/idOffset"
+                  }
+                ]
+              }
+            },
+            {
+              "niceName": "drum",
+              "type": "BaseItem",
+              "params": {
+                "parameters": [
+                  {
+                    "value": 0.1000000014901161,
+                    "controlAddress": "/brightness"
+                  },
+                  {
+                    "value": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "controlAddress": "/color"
+                  },
+                  {
+                    "value": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "controlAddress": "/backgroundColor"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/balance"
+                  },
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/contrast"
+                  },
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/scale"
+                  },
+                  {
+                    "value": 1.0,
+                    "controlAddress": "/speed"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/idOffset"
+                  }
+                ]
+              }
+            },
+            {
+              "niceName": "keyboard",
+              "type": "BaseItem",
+              "params": {
+                "parameters": [
+                  {
+                    "value": 0.1016067638993263,
+                    "controlAddress": "/brightness"
+                  },
+                  {
+                    "value": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "controlAddress": "/color"
+                  },
+                  {
+                    "value": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "controlAddress": "/backgroundColor"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/balance"
+                  },
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/contrast"
+                  },
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/scale"
+                  },
+                  {
+                    "value": 1.0,
+                    "controlAddress": "/speed"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/idOffset"
+                  }
+                ]
+              }
+            },
+            {
+              "niceName": "voice",
+              "type": "BaseItem",
+              "params": {
+                "parameters": [
+                  {
+                    "value": 0.1007427796721458,
+                    "controlAddress": "/brightness"
+                  },
+                  {
+                    "value": [
+                      0.0,
+                      0.007843137718737125,
+                      0.8274509906768799,
+                      1.0
+                    ],
+                    "controlAddress": "/color"
+                  },
+                  {
+                    "value": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "controlAddress": "/backgroundColor"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/balance"
+                  },
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/contrast"
+                  },
+                  {
+                    "value": 3.0,
+                    "controlAddress": "/scale"
+                  },
+                  {
+                    "value": 1.0,
+                    "controlAddress": "/speed"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/idOffset"
+                  }
+                ]
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      }
+    },
+    "pictures": {
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    },
+    "nodes": {
+      "items": [
+        {
+          "niceName": "Instru",
+          "type": "Node",
+          "nodes": {
+            "hideInEditor": true,
+            "items": [
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -328.0,
+                      -379.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": [
+                      165.0,
+                      223.0
+                    ],
+                    "controlAddress": "/viewUISize"
+                  },
+                  {
+                    "value": "/library/generic/multipoint",
+                    "controlAddress": "/activeBlock"
+                  }
+                ],
+                "niceName": "Pulse",
+                "type": "Model",
+                "block": {
+                  "params": {
+                    "parameters": [
+                      {
+                        "value": -0.02999999932944775,
+                        "controlAddress": "/offset"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -314.0,
+                      -131.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": [
+                      132.0,
+                      209.0
+                    ],
+                    "controlAddress": "/viewUISize"
+                  },
+                  {
+                    "value": "/library/generic/noise",
+                    "controlAddress": "/activeBlock"
+                  }
+                ],
+                "niceName": "Noise",
+                "type": "Model",
+                "block": {
+                  "params": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/brightness"
+                      },
+                      {
+                        "value": 3.0,
+                        "controlAddress": "/contrast"
+                      },
+                      {
+                        "value": -0.6000003814697266,
+                        "controlAddress": "/speed"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -108.0,
+                      -380.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": [
+                      69.0,
+                      219.0
+                    ],
+                    "controlAddress": "/viewUISize"
+                  }
+                ],
+                "niceName": "Composite",
+                "type": "Composite"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -317.0,
+                      141.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": [
+                      131.0,
+                      240.0
+                    ],
+                    "controlAddress": "/viewUISize"
+                  },
+                  {
+                    "value": "/library/generic/point",
+                    "controlAddress": "/activeBlock"
+                  }
+                ],
+                "niceName": "Mask",
+                "type": "Model",
+                "block": {
+                  "params": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/brightness"
+                      },
+                      {
+                        "value": [
+                          0.0,
+                          0.0,
+                          0.0,
+                          1.0
+                        ],
+                        "controlAddress": "/backgroundColor"
+                      },
+                      {
+                        "value": 0.3074204921722412,
+                        "controlAddress": "/fade"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -649.0,
+                      176.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/value",
+                    "type": "Float",
+                    "niceName": "Value",
+                    "customizable": true,
+                    "removable": false,
+                    "description": "",
+                    "hideInEditor": false,
+                    "feedbackOnly": false
+                  }
+                ],
+                "niceName": "Reveal Position",
+                "type": "Float"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -658.0,
+                      271.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": 3.330000877380371,
+                    "minValue": 0.0,
+                    "maxValue": 2.147483648e9,
+                    "controlAddress": "/value",
+                    "type": "Float",
+                    "niceName": "Value",
+                    "customizable": true,
+                    "removable": false,
+                    "description": "",
+                    "hideInEditor": false,
+                    "feedbackOnly": false
+                  }
+                ],
+                "niceName": "Reveal Size",
+                "type": "Float"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -45.0,
+                      156.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": [
+                      69.0,
+                      224.0
+                    ],
+                    "controlAddress": "/viewUISize"
+                  }
+                ],
+                "niceName": "Color Remap",
+                "containers": {
+                  "colors": {
+                    "editorIsCollapsed": true,
+                    "items": [
+                      {
+                        "parameters": [
+                          {
+                            "value": 0.0,
+                            "controlAddress": "/time"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              0.0,
+                              0.0,
+                              1.0
+                            ],
+                            "controlAddress": "/color"
+                          }
+                        ],
+                        "niceName": "Color 1",
+                        "type": "BaseItem"
+                      },
+                      {
+                        "parameters": [
+                          {
+                            "value": 0.3153347969055176,
+                            "controlAddress": "/time"
+                          },
+                          {
+                            "value": [
+                              0.2823529541492462,
+                              0.2823529541492462,
+                              0.2823529541492462,
+                              1.0
+                            ],
+                            "controlAddress": "/color"
+                          }
+                        ],
+                        "niceName": "Color 2",
+                        "type": "BaseItem"
+                      },
+                      {
+                        "parameters": [
+                          {
+                            "value": 0.7257019281387329,
+                            "controlAddress": "/time"
+                          },
+                          {
+                            "value": [
+                              0.2549019753932953,
+                              0.2549019753932953,
+                              0.2549019753932953,
+                              1.0
+                            ],
+                            "controlAddress": "/color"
+                          }
+                        ],
+                        "niceName": "Color 4",
+                        "type": "BaseItem"
+                      },
+                      {
+                        "parameters": [
+                          {
+                            "value": 0.812095046043396,
+                            "controlAddress": "/time"
+                          },
+                          {
+                            "value": [
+                              0.0,
+                              0.0,
+                              0.0,
+                              1.0
+                            ],
+                            "controlAddress": "/color"
+                          }
+                        ],
+                        "niceName": "Color 3",
+                        "type": "BaseItem"
+                      }
+                    ],
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  }
+                },
+                "type": "Color Remap"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -36.0,
+                      -70.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": [
+                      80.0,
+                      220.0
+                    ],
+                    "controlAddress": "/viewUISize"
+                  },
+                  {
+                    "value": "Min",
+                    "controlAddress": "/blendMode"
+                  }
+                ],
+                "niceName": "Composite 1",
+                "type": "Composite"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      148.0,
+                      37.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": [
+                      119.0,
+                      236.0
+                    ],
+                    "controlAddress": "/viewUISize"
+                  },
+                  {
+                    "value": "Add",
+                    "controlAddress": "/blendMode"
+                  }
+                ],
+                "niceName": "Composite 2",
+                "type": "Composite"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -691.0,
+                      -344.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": [
+                      0.7450980544090271,
+                      0.7254902124404907,
+                      0.364705890417099,
+                      1.0
+                    ],
+                    "controlAddress": "/value",
+                    "type": "Color",
+                    "niceName": "Value",
+                    "customizable": true,
+                    "removable": false,
+                    "description": "",
+                    "hideInEditor": false,
+                    "feedbackOnly": false
+                  }
+                ],
+                "niceName": "Pulse Color",
+                "type": "Color"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -670.0,
+                      -50.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": [
+                      0.9215686321258545,
+                      0.615686297416687,
+                      0.0,
+                      1.0
+                    ],
+                    "controlAddress": "/value",
+                    "type": "Color",
+                    "niceName": "Value",
+                    "customizable": true,
+                    "removable": false,
+                    "description": "",
+                    "hideInEditor": false,
+                    "feedbackOnly": false
+                  }
+                ],
+                "niceName": "Noise Color",
+                "type": "Color"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -672.0,
+                      -412.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": 0.7450000047683716,
+                    "minValue": 0.0,
+                    "maxValue": 1.0,
+                    "controlAddress": "/value",
+                    "type": "Float",
+                    "niceName": "Value",
+                    "customizable": true,
+                    "removable": false,
+                    "description": "",
+                    "hideInEditor": false,
+                    "feedbackOnly": false
+                  }
+                ],
+                "niceName": "Pulse Brightness",
+                "type": "Float"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -668.0,
+                      -14.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": 0.1499999761581421,
+                    "minValue": -1.0,
+                    "maxValue": 1.0,
+                    "controlAddress": "/value",
+                    "type": "Float",
+                    "niceName": "Value",
+                    "customizable": true,
+                    "removable": false,
+                    "description": "",
+                    "hideInEditor": false,
+                    "feedbackOnly": false
+                  }
+                ],
+                "niceName": "Noise Balance",
+                "type": "Float"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -667.0,
+                      53.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": 2.9000084400177,
+                    "controlAddress": "/value",
+                    "type": "Float",
+                    "niceName": "Value",
+                    "customizable": true,
+                    "removable": false,
+                    "description": "",
+                    "hideInEditor": false,
+                    "feedbackOnly": false
+                  }
+                ],
+                "niceName": "Scale",
+                "type": "Float"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -686.0,
+                      -230.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": 0.3300000131130219,
+                    "minValue": 0.0,
+                    "maxValue": 1.0,
+                    "controlAddress": "/value",
+                    "type": "Float",
+                    "niceName": "Value",
+                    "customizable": true,
+                    "removable": false,
+                    "description": "",
+                    "hideInEditor": false,
+                    "feedbackOnly": false
+                  }
+                ],
+                "niceName": "Pulse Scale",
+                "type": "Float"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -682.0,
+                      -277.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": 0.1000000014901161,
+                    "minValue": 0.0,
+                    "maxValue": 2.147483648e9,
+                    "controlAddress": "/value",
+                    "type": "Float",
+                    "niceName": "Value",
+                    "customizable": true,
+                    "removable": false,
+                    "description": "",
+                    "hideInEditor": false,
+                    "feedbackOnly": false
+                  }
+                ],
+                "niceName": "Pulse Gap",
+                "type": "Float"
+              },
+              {
+                "parameters": [
+                  {
+                    "value": [
+                      -693.0,
+                      -149.0
+                    ],
+                    "controlAddress": "/viewUIPosition"
+                  },
+                  {
+                    "value": 0.009999999776482582,
+                    "controlAddress": "/value",
+                    "type": "Float",
+                    "niceName": "Value",
+                    "customizable": true,
+                    "removable": false,
+                    "description": "",
+                    "hideInEditor": false,
+                    "feedbackOnly": false
+                  }
+                ],
+                "niceName": "Pulse Speed",
+                "type": "Float"
+              }
+            ],
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0,
+            "connections": {
+              "items": [
+                {
+                  "niceName": "Reveal Position:Value > Mask:Position",
+                  "type": "BaseItem",
+                  "sourceNode": "revealPosition",
+                  "sourceSlot": "Value",
+                  "destNode": "mask",
+                  "destSlot": "Position"
+                },
+                {
+                  "niceName": "Reveal Size:Value > Mask:Size",
+                  "type": "BaseItem",
+                  "sourceNode": "revealSize",
+                  "sourceSlot": "Value",
+                  "destNode": "mask",
+                  "destSlot": "Size"
+                },
+                {
+                  "niceName": "Mask:Colors > Color Remap:Colors 1",
+                  "type": "BaseItem",
+                  "sourceNode": "mask",
+                  "sourceSlot": "Colors",
+                  "destNode": "colorRemap",
+                  "destSlot": "Colors 1"
+                },
+                {
+                  "niceName": "Pulse:Colors > Composite:Colors 1",
+                  "type": "BaseItem",
+                  "sourceNode": "pulse",
+                  "sourceSlot": "Colors",
+                  "destNode": "composite",
+                  "destSlot": "Colors 1"
+                },
+                {
+                  "niceName": "Noise:Colors > Composite:Colors 2",
+                  "type": "BaseItem",
+                  "sourceNode": "noise",
+                  "sourceSlot": "Colors",
+                  "destNode": "composite",
+                  "destSlot": "Colors 2"
+                },
+                {
+                  "niceName": "Composite:Colors > Composite 1:Colors 1",
+                  "type": "BaseItem",
+                  "sourceNode": "composite",
+                  "sourceSlot": "Colors",
+                  "destNode": "composite1",
+                  "destSlot": "Colors 1"
+                },
+                {
+                  "niceName": "Mask:Colors > Composite 1:Colors 2",
+                  "type": "BaseItem",
+                  "sourceNode": "mask",
+                  "sourceSlot": "Colors",
+                  "destNode": "composite1",
+                  "destSlot": "Colors 2"
+                },
+                {
+                  "niceName": "Composite 1:Colors > Composite 2:Colors 1",
+                  "type": "BaseItem",
+                  "sourceNode": "composite1",
+                  "sourceSlot": "Colors",
+                  "destNode": "composite2",
+                  "destSlot": "Colors 1"
+                },
+                {
+                  "niceName": "Color Remap:Colors > Composite 2:Colors 2",
+                  "type": "BaseItem",
+                  "sourceNode": "colorRemap",
+                  "sourceSlot": "Colors",
+                  "destNode": "composite2",
+                  "destSlot": "Colors 2"
+                },
+                {
+                  "niceName": "Composite 2:Colors > Prop:Colors",
+                  "type": "BaseItem",
+                  "sourceNode": "composite2",
+                  "sourceSlot": "Colors",
+                  "destNode": "prop",
+                  "destSlot": "Colors"
+                },
+                {
+                  "niceName": "Pulse Color:Value > Pulse:Color",
+                  "type": "BaseItem",
+                  "sourceNode": "pulseColor",
+                  "sourceSlot": "Value",
+                  "destNode": "pulse",
+                  "destSlot": "Color"
+                },
+                {
+                  "niceName": "Noise Color:Value > Noise:Color",
+                  "type": "BaseItem",
+                  "sourceNode": "noiseColor",
+                  "sourceSlot": "Value",
+                  "destNode": "noise",
+                  "destSlot": "Color"
+                },
+                {
+                  "niceName": "Pulse Brightness:Value > Pulse:Brightness",
+                  "type": "BaseItem",
+                  "sourceNode": "pulseBrightness",
+                  "sourceSlot": "Value",
+                  "destNode": "pulse",
+                  "destSlot": "Brightness"
+                },
+                {
+                  "niceName": "Noise Balance:Value > Noise:Balance",
+                  "type": "BaseItem",
+                  "sourceNode": "noiseBalance",
+                  "sourceSlot": "Value",
+                  "destNode": "noise",
+                  "destSlot": "Balance"
+                },
+                {
+                  "niceName": "Scale:Value > Noise:Scale",
+                  "type": "BaseItem",
+                  "sourceNode": "scale",
+                  "sourceSlot": "Value",
+                  "destNode": "noise",
+                  "destSlot": "Scale"
+                },
+                {
+                  "niceName": "Pulse Scale:Value > Pulse:Size",
+                  "type": "BaseItem",
+                  "sourceNode": "pulseScale",
+                  "sourceSlot": "Value",
+                  "destNode": "pulse",
+                  "destSlot": "Size"
+                },
+                {
+                  "niceName": "Pulse Gap:Value > Pulse:Gap",
+                  "type": "BaseItem",
+                  "sourceNode": "pulseGap",
+                  "sourceSlot": "Value",
+                  "destNode": "pulse",
+                  "destSlot": "Gap"
+                },
+                {
+                  "niceName": "Pulse Speed:Value > Pulse:Speed",
+                  "type": "BaseItem",
+                  "sourceNode": "pulseSpeed",
+                  "sourceSlot": "Value",
+                  "destNode": "pulse",
+                  "destSlot": "Speed"
+                }
+              ],
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            },
+            "prop": {
+              "parameters": [
+                {
+                  "value": [
+                    408.0,
+                    37.0
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                }
+              ],
+              "niceName": "Prop",
+              "type": "Prop"
+            }
+          }
+        }
+      ],
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    },
+    "scripts": {
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    },
+    "timelines": {
+      "items": [
+        {
+          "niceName": "demo0",
+          "type": "Timeline",
+          "sequence": {
+            "parameters": [
+              {
+                "value": 14.30000019073486,
+                "controlAddress": "/totalTime"
+              },
+              {
+                "value": 14.30000019073486,
+                "controlAddress": "/viewEndTime"
+              }
+            ],
+            "niceName": "Sequence",
+            "type": "Sequence",
+            "layers": {
+              "hideInEditor": true,
+              "items": [
+                {
+                  "parameters": [
+                    {
+                      "value": 60.0,
+                      "controlAddress": "/listSize"
+                    }
+                  ],
+                  "niceName": "Block Layer",
+                  "type": "Blocks",
+                  "blocks": {
+                    "hideInEditor": true,
+                    "items": [
+                      {
+                        "parameters": [
+                          {
+                            "value": 0.0,
+                            "controlAddress": "/startTime"
+                          },
+                          {
+                            "value": 11.0,
+                            "controlAddress": "/length"
+                          },
+                          {
+                            "value": "/library/generic/noise",
+                            "controlAddress": "/activeBlock"
+                          },
+                          {
+                            "value": 7.819999694824219,
+                            "controlAddress": "/fadeOut",
+                            "enabled": false
+                          }
+                        ],
+                        "niceName": "LightBlockClip",
+                        "editorIsCollapsed": true,
+                        "type": "LightBlockClip",
+                        "blockData": {
+                          "params": {
+                            "parameters": [
+                              {
+                                "value": 0.4334471225738525,
+                                "controlAddress": "/brightness"
+                              },
+                              {
+                                "value": [
+                                  0.09803921729326248,
+                                  0.5450980663299561,
+                                  1.0,
+                                  1.0
+                                ],
+                                "controlAddress": "/color"
+                              },
+                              {
+                                "value": [
+                                  0.0,
+                                  0.0,
+                                  0.0,
+                                  1.0
+                                ],
+                                "controlAddress": "/backgroundColor"
+                              },
+                              {
+                                "value": -0.09187281131744385,
+                                "controlAddress": "/balance"
+                              },
+                              {
+                                "value": 3.0,
+                                "controlAddress": "/contrast"
+                              },
+                              {
+                                "value": 44.90007400512695,
+                                "controlAddress": "/scale"
+                              },
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/speed"
+                              },
+                              {
+                                "value": 0.0,
+                                "controlAddress": "/idOffset"
+                              }
+                            ]
+                          }
+                        },
+                        "filters": {
+                          "viewOffset": [
+                            0,
+                            0
+                          ],
+                          "viewZoom": 1.0
+                        },
+                        "effects": {
+                          "viewOffset": [
+                            0,
+                            0
+                          ],
+                          "viewZoom": 1.0
+                        }
+                      },
+                      {
+                        "parameters": [
+                          {
+                            "value": 3.180000305175781,
+                            "controlAddress": "/startTime"
+                          },
+                          {
+                            "value": 4.560000419616699,
+                            "controlAddress": "/length"
+                          },
+                          {
+                            "value": "/library/generic/rainbow",
+                            "controlAddress": "/activeBlock"
+                          },
+                          {
+                            "value": 4.560000419616699,
+                            "controlAddress": "/fadeIn",
+                            "enabled": false
+                          },
+                          {
+                            "value": 1.14000129699707,
+                            "controlAddress": "/fadeOut",
+                            "enabled": false
+                          }
+                        ],
+                        "niceName": "LightBlockClip 1",
+                        "editorIsCollapsed": true,
+                        "type": "LightBlockClip",
+                        "blockData": {
+                          "params": {
+                            "parameters": [
+                              {
+                                "value": 0.257857084274292,
+                                "controlAddress": "/brightness"
+                              },
+                              {
+                                "value": 0.0,
+                                "controlAddress": "/offset"
+                              },
+                              {
+                                "value": 0.3600011467933655,
+                                "controlAddress": "/speed"
+                              },
+                              {
+                                "value": 0.3299998044967651,
+                                "controlAddress": "/density"
+                              },
+                              {
+                                "value": 0.0,
+                                "controlAddress": "/idOffset"
+                              }
+                            ]
+                          }
+                        },
+                        "filters": {
+                          "viewOffset": [
+                            0,
+                            0
+                          ],
+                          "viewZoom": 1.0
+                        },
+                        "effects": {
+                          "viewOffset": [
+                            0,
+                            0
+                          ],
+                          "viewZoom": 1.0
+                        }
+                      },
+                      {
+                        "parameters": [
+                          {
+                            "value": 6.59999942779541,
+                            "controlAddress": "/startTime"
+                          },
+                          {
+                            "value": 5.859999656677246,
+                            "controlAddress": "/length"
+                          },
+                          {
+                            "value": "/library/generic/multipoint",
+                            "controlAddress": "/activeBlock"
+                          },
+                          {
+                            "value": 1.14000129699707,
+                            "controlAddress": "/fadeIn",
+                            "enabled": false
+                          },
+                          {
+                            "value": 2.159999847412109,
+                            "controlAddress": "/fadeOut",
+                            "enabled": false
+                          }
+                        ],
+                        "niceName": "LightBlockClip 2",
+                        "editorIsCollapsed": true,
+                        "type": "LightBlockClip",
+                        "blockData": {
+                          "params": {
+                            "parameters": [
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/brightness"
+                              },
+                              {
+                                "value": [
+                                  1.0,
+                                  1.0,
+                                  1.0,
+                                  1.0
+                                ],
+                                "controlAddress": "/color"
+                              },
+                              {
+                                "value": [
+                                  0.0,
+                                  0.0,
+                                  0.0,
+                                  1.0
+                                ],
+                                "controlAddress": "/backgroundColor"
+                              },
+                              {
+                                "value": 0.04000003263354301,
+                                "controlAddress": "/speed"
+                              },
+                              {
+                                "value": 0.0,
+                                "controlAddress": "/offset"
+                              },
+                              {
+                                "value": 0.0899985283613205,
+                                "controlAddress": "/gap"
+                              },
+                              {
+                                "value": 0.1643109619617462,
+                                "controlAddress": "/size"
+                              },
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/fade"
+                              },
+                              {
+                                "value": 1,
+                                "hexMode": false,
+                                "controlAddress": "/numProps"
+                              }
+                            ]
+                          }
+                        },
+                        "filters": {
+                          "viewOffset": [
+                            0,
+                            0
+                          ],
+                          "viewZoom": 1.0
+                        },
+                        "effects": {
+                          "viewOffset": [
+                            0,
+                            0
+                          ],
+                          "viewZoom": 1.0
+                        }
+                      },
+                      {
+                        "parameters": [
+                          {
+                            "value": 10.29999923706055,
+                            "controlAddress": "/startTime"
+                          },
+                          {
+                            "value": 6.839999675750732,
+                            "controlAddress": "/length"
+                          },
+                          {
+                            "value": "/library/generic/noise",
+                            "controlAddress": "/activeBlock"
+                          },
+                          {
+                            "value": 2.159999847412109,
+                            "controlAddress": "/fadeIn",
+                            "enabled": false
+                          },
+                          {
+                            "value": 0.0,
+                            "controlAddress": "/fadeOut",
+                            "enabled": false
+                          }
+                        ],
+                        "niceName": "LightBlockClip 3",
+                        "editorIsCollapsed": true,
+                        "type": "LightBlockClip",
+                        "blockData": {
+                          "params": {
+                            "parameters": [
+                              {
+                                "value": 0.4334471225738525,
+                                "controlAddress": "/brightness"
+                              },
+                              {
+                                "value": [
+                                  0.09803921729326248,
+                                  0.5450980663299561,
+                                  1.0,
+                                  1.0
+                                ],
+                                "controlAddress": "/color"
+                              },
+                              {
+                                "value": [
+                                  0.0,
+                                  0.0,
+                                  0.0,
+                                  1.0
+                                ],
+                                "controlAddress": "/backgroundColor"
+                              },
+                              {
+                                "value": -0.09187281131744385,
+                                "controlAddress": "/balance"
+                              },
+                              {
+                                "value": 3.0,
+                                "controlAddress": "/contrast"
+                              },
+                              {
+                                "value": 44.90007400512695,
+                                "controlAddress": "/scale"
+                              },
+                              {
+                                "value": 1.0,
+                                "controlAddress": "/speed"
+                              },
+                              {
+                                "value": 0.0,
+                                "controlAddress": "/idOffset"
+                              }
+                            ]
+                          }
+                        },
+                        "filters": {
+                          "viewOffset": [
+                            0,
+                            0
+                          ],
+                          "viewZoom": 1.0
+                        },
+                        "effects": {
+                          "viewOffset": [
+                            0,
+                            0
+                          ],
+                          "viewZoom": 1.0
+                        }
+                      }
+                    ],
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  },
+                  "filters": {
+                    "viewOffset": [
+                      0,
+                      0
+                    ],
+                    "viewZoom": 1.0
+                  }
+                }
+              ],
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            },
+            "cues": {
+              "hideInEditor": true,
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            },
+            "clusterGroups": {
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            }
+          }
+        }
+      ],
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    },
+    "liveFeeds": {
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    },
+    "video": {
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    },
+    "genericFilters": {
+      "remap": {
+        "niceName": "Remap",
+        "type": "Remap",
+        "presets": {
+          "items": [
+            {
+              "niceName": "Preset",
+              "type": "BaseItem",
+              "params": {
+                "parameters": [
+                  {
+                    "value": "Stretch",
+                    "controlAddress": "/remapMode"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/sourceStart"
+                  },
+                  {
+                    "value": 1.0,
+                    "controlAddress": "/sourceEnd"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/targetStart"
+                  },
+                  {
+                    "value": 0.5,
+                    "controlAddress": "/targetEnd"
+                  }
+                ]
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      },
+      "hsv": {
+        "niceName": "HSV",
+        "type": "HSV",
+        "presets": {
+          "items": [
+            {
+              "niceName": "Preset",
+              "type": "BaseItem",
+              "params": {
+                "parameters": [
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/hueOffset"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/saturationOffset"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/brightnessOffset"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/hueSpeed"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/saturationSpeed"
+                  },
+                  {
+                    "value": 0.0,
+                    "controlAddress": "/brightnessSpeed"
+                  }
+                ]
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      },
+      "brightnessContrast": {
+        "niceName": "Brightness Contrast",
+        "type": "Brightness Contrast"
+      }
+    }
+  },
+  "props": {
+    "containers": {
+      "guitar": {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": "/library/nodes/instru",
+            "controlAddress": "/activeBlock"
+          }
+        ],
+        "niceName": "Guitar",
+        "editorIsCollapsed": true,
+        "containers": {
+          "general": {
+            "parameters": [
+              {
+                "value": 0,
+                "hexMode": false,
+                "controlAddress": "/globalID"
+              },
+              {
+                "value": 324,
+                "hexMode": false,
+                "controlAddress": "/resolution"
+              }
+            ]
+          },
+          "connection": {
+            "parameters": [
+              {
+                "value": "192.168.137.186",
+                "controlAddress": "/remoteHost"
+              }
+            ]
+          },
+          "controls": {
+          },
+          "bakeAndUpload": {
+            "editorIsCollapsed": true
+          },
+          "rgb": {
+            "parameters": [
+              {
+                "value": 0.4522184133529663,
+                "controlAddress": "/brightness"
+              }
+            ],
+            "owned": true
+          },
+          "buttons": {
+            "owned": true
+          },
+          "battery": {
+            "owned": true
+          },
+          "scripts": {
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "instru": {
+            "params": {
+              "parameters": [
+                {
+                  "value": 3.299999952316284,
+                  "controlAddress": "/revealSize"
+                },
+                {
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "controlAddress": "/pulseColor"
+                },
+                {
+                  "value": [
+                    0.09411764889955521,
+                    0.6352941393852234,
+                    0.9215686321258545,
+                    1.0
+                  ],
+                  "controlAddress": "/noiseColor"
+                },
+                {
+                  "value": 1.0,
+                  "controlAddress": "/pulseBrightness"
+                },
+                {
+                  "value": -0.4934122860431671,
+                  "controlAddress": "/noiseBalance"
+                },
+                {
+                  "value": 5.800007820129395,
+                  "controlAddress": "/scale"
+                },
+                {
+                  "value": 0.3300000131130219,
+                  "controlAddress": "/pulseScale"
+                },
+                {
+                  "value": 0.1200000643730164,
+                  "controlAddress": "/pulseGap"
+                }
+              ]
+            }
+          }
+        },
+        "type": "Guitar",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "block": {
+          "params": {
+            "parameters": [
+              {
+                "value": 3.299999952316284,
+                "controlAddress": "/revealSize"
+              },
+              {
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "controlAddress": "/pulseColor"
+              },
+              {
+                "value": [
+                  0.09411764889955521,
+                  0.6352941393852234,
+                  0.9215686321258545,
+                  1.0
+                ],
+                "controlAddress": "/noiseColor"
+              },
+              {
+                "value": 1.0,
+                "controlAddress": "/pulseBrightness"
+              },
+              {
+                "value": -0.4934122860431671,
+                "controlAddress": "/noiseBalance"
+              },
+              {
+                "value": 5.800007820129395,
+                "controlAddress": "/scale"
+              },
+              {
+                "value": 0.3300000131130219,
+                "controlAddress": "/pulseScale"
+              },
+              {
+                "value": 0.1200000643730164,
+                "controlAddress": "/pulseGap"
+              }
+            ]
+          }
+        },
+        "deviceID": "50:2:91:86:38:9C"
+      },
+      "clarinet": {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": "/library/nodes/instru",
+            "controlAddress": "/activeBlock"
+          }
+        ],
+        "niceName": "Clarinet",
+        "editorIsCollapsed": true,
+        "containers": {
+          "general": {
+            "parameters": [
+              {
+                "value": 1,
+                "hexMode": false,
+                "controlAddress": "/globalID"
+              },
+              {
+                "value": 75,
+                "hexMode": false,
+                "controlAddress": "/resolution"
+              }
+            ]
+          },
+          "connection": {
+            "parameters": [
+              {
+                "value": "192.168.137.216",
+                "controlAddress": "/remoteHost"
+              },
+              {
+                "value": "Silicon Labs CP210x USB to UART Bridge (COM11)",
+                "controlAddress": "/serialDevice"
+              }
+            ]
+          },
+          "controls": {
+          },
+          "bakeAndUpload": {
+            "parameters": [
+              {
+                "value": false,
+                "controlAddress": "/bakeMode"
+              }
+            ],
+            "editorIsCollapsed": true
+          },
+          "rgb": {
+            "parameters": [
+              {
+                "value": 1.0,
+                "controlAddress": "/brightness"
+              }
+            ],
+            "owned": true
+          },
+          "buttons": {
+            "owned": true
+          },
+          "battery": {
+            "owned": true
+          },
+          "scripts": {
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "instru": {
+            "params": {
+            }
+          }
+        },
+        "type": "Clarinet",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "block": {
+          "params": {
+          }
+        },
+        "deviceID": "50:2:91:86:89:68"
+      },
+      "connection": {
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/autoAddNetwork"
+          }
+        ],
+        "editorIsCollapsed": true
+      },
+      "controls": {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/sendFeedback"
+          }
+        ]
+      },
+      "show": {
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/bakeMode"
+          },
+          {
+            "value": "juggling",
+            "controlAddress": "/showFilename"
+          }
+        ]
+      },
+      "families": {
+      }
+    },
+    "items": [
+      {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": "/library/nodes/instru",
+            "controlAddress": "/activeBlock"
+          }
+        ],
+        "niceName": "Guitar",
+        "editorIsCollapsed": true,
+        "containers": {
+          "general": {
+            "parameters": [
+              {
+                "value": 0,
+                "hexMode": false,
+                "controlAddress": "/globalID"
+              },
+              {
+                "value": 324,
+                "hexMode": false,
+                "controlAddress": "/resolution"
+              }
+            ]
+          },
+          "connection": {
+            "parameters": [
+              {
+                "value": "192.168.137.186",
+                "controlAddress": "/remoteHost"
+              }
+            ]
+          },
+          "controls": {
+          },
+          "bakeAndUpload": {
+            "editorIsCollapsed": true
+          },
+          "rgb": {
+            "parameters": [
+              {
+                "value": 0.4522184133529663,
+                "controlAddress": "/brightness"
+              }
+            ],
+            "owned": true
+          },
+          "buttons": {
+            "owned": true
+          },
+          "battery": {
+            "owned": true
+          },
+          "scripts": {
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "instru": {
+            "params": {
+              "parameters": [
+                {
+                  "value": 3.299999952316284,
+                  "controlAddress": "/revealSize"
+                },
+                {
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "controlAddress": "/pulseColor"
+                },
+                {
+                  "value": [
+                    0.09411764889955521,
+                    0.6352941393852234,
+                    0.9215686321258545,
+                    1.0
+                  ],
+                  "controlAddress": "/noiseColor"
+                },
+                {
+                  "value": 1.0,
+                  "controlAddress": "/pulseBrightness"
+                },
+                {
+                  "value": -0.4934122860431671,
+                  "controlAddress": "/noiseBalance"
+                },
+                {
+                  "value": 5.800007820129395,
+                  "controlAddress": "/scale"
+                },
+                {
+                  "value": 0.3300000131130219,
+                  "controlAddress": "/pulseScale"
+                },
+                {
+                  "value": 0.1200000643730164,
+                  "controlAddress": "/pulseGap"
+                }
+              ]
+            }
+          }
+        },
+        "type": "Guitar",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "block": {
+          "params": {
+            "parameters": [
+              {
+                "value": 3.299999952316284,
+                "controlAddress": "/revealSize"
+              },
+              {
+                "value": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "controlAddress": "/pulseColor"
+              },
+              {
+                "value": [
+                  0.09411764889955521,
+                  0.6352941393852234,
+                  0.9215686321258545,
+                  1.0
+                ],
+                "controlAddress": "/noiseColor"
+              },
+              {
+                "value": 1.0,
+                "controlAddress": "/pulseBrightness"
+              },
+              {
+                "value": -0.4934122860431671,
+                "controlAddress": "/noiseBalance"
+              },
+              {
+                "value": 5.800007820129395,
+                "controlAddress": "/scale"
+              },
+              {
+                "value": 0.3300000131130219,
+                "controlAddress": "/pulseScale"
+              },
+              {
+                "value": 0.1200000643730164,
+                "controlAddress": "/pulseGap"
+              }
+            ]
+          }
+        },
+        "deviceID": "50:2:91:86:38:9C"
+      },
+      {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": "/library/nodes/instru",
+            "controlAddress": "/activeBlock"
+          }
+        ],
+        "niceName": "Clarinet",
+        "editorIsCollapsed": true,
+        "containers": {
+          "general": {
+            "parameters": [
+              {
+                "value": 1,
+                "hexMode": false,
+                "controlAddress": "/globalID"
+              },
+              {
+                "value": 75,
+                "hexMode": false,
+                "controlAddress": "/resolution"
+              }
+            ]
+          },
+          "connection": {
+            "parameters": [
+              {
+                "value": "192.168.137.216",
+                "controlAddress": "/remoteHost"
+              },
+              {
+                "value": "Silicon Labs CP210x USB to UART Bridge (COM11)",
+                "controlAddress": "/serialDevice"
+              }
+            ]
+          },
+          "controls": {
+          },
+          "bakeAndUpload": {
+            "parameters": [
+              {
+                "value": false,
+                "controlAddress": "/bakeMode"
+              }
+            ],
+            "editorIsCollapsed": true
+          },
+          "rgb": {
+            "parameters": [
+              {
+                "value": 1.0,
+                "controlAddress": "/brightness"
+              }
+            ],
+            "owned": true
+          },
+          "buttons": {
+            "owned": true
+          },
+          "battery": {
+            "owned": true
+          },
+          "scripts": {
+            "viewOffset": [
+              0,
+              0
+            ],
+            "viewZoom": 1.0
+          },
+          "instru": {
+            "params": {
+            }
+          }
+        },
+        "type": "Clarinet",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "block": {
+          "params": {
+          }
+        },
+        "deviceID": "50:2:91:86:89:68"
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  }
+}

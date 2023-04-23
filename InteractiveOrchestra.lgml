@@ -1,0 +1,2007 @@
+{
+  "metaData": {
+    "version": "1.0.1b1",
+    "versionNumber": 65537
+  },
+  "projectSettings": {
+    "containers": {
+      "dashboardSettings": {
+        "parameters": [
+          {
+            "value": "",
+            "controlAddress": "/showDashboardOnStartup",
+            "enabled": false
+          }
+        ]
+      },
+      "customDefinitions": {
+      },
+      "audioSettings": {
+        "audioSettings": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<DEVICESETUP deviceType=\"ASIO\" audioOutputDeviceName=\"Focusrite USB ASIO\"\r\n             audioInputDeviceName=\"Focusrite USB ASIO\" audioDeviceRate=\"44100.0\"\r\n             audioDeviceInChans=\"111111\"/>\r\n"
+      }
+    }
+  },
+  "dashboardManager": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "parrots": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "layout": {
+    "mainLayout": {
+      "type": 1,
+      "width": 1920,
+      "height": 989,
+      "direction": 2,
+      "shifters": [
+        {
+          "type": 1,
+          "width": 1920,
+          "height": 989,
+          "direction": 1,
+          "shifters": [
+            {
+              "type": 1,
+              "width": 280,
+              "height": 989,
+              "direction": 2,
+              "shifters": [
+                {
+                  "type": 0,
+                  "width": 280,
+                  "height": 174,
+                  "currentContent": "Transport",
+                  "tabs": [
+                    {
+                      "name": "Transport"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 280,
+                  "height": 348,
+                  "currentContent": "Presets",
+                  "tabs": [
+                    {
+                      "name": "Presets"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 280,
+                  "height": 455,
+                  "currentContent": "Outliner",
+                  "tabs": [
+                    {
+                      "name": "Nodes (List View)"
+                    },
+                    {
+                      "name": "Outliner"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 0,
+              "width": 1101,
+              "height": 989,
+              "currentContent": "Nodes (2D View)",
+              "tabs": [
+                {
+                  "name": "Nodes (2D View)"
+                }
+              ]
+            },
+            {
+              "type": 1,
+              "width": 527,
+              "height": 989,
+              "direction": 2,
+              "shifters": [
+                {
+                  "type": 0,
+                  "width": 527,
+                  "height": 666,
+                  "currentContent": "Inspector",
+                  "tabs": [
+                    {
+                      "name": "Inspector"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 527,
+                  "height": 317,
+                  "currentContent": "Logger",
+                  "tabs": [
+                    {
+                      "name": "Help"
+                    },
+                    {
+                      "name": "Logger"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "windows": null
+  },
+  "nodes": {
+    "items": [
+      {
+        "parameters": [
+          {
+            "value": [
+              -2072.470703125,
+              -195.7647094726562
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              303.0,
+              228.0
+            ],
+            "controlAddress": "/viewUISize"
+          }
+        ],
+        "niceName": "Audio In",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "Audio In",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+        },
+        "channels": [
+          {
+            "parameters": [
+              {
+                "value": false,
+                "controlAddress": "/active"
+              }
+            ],
+            "editorIsCollapsed": true
+          },
+          {
+            "parameters": [
+              {
+                "value": false,
+                "controlAddress": "/active"
+              }
+            ],
+            "editorIsCollapsed": true
+          },
+          {
+            "parameters": [
+              {
+                "value": false,
+                "controlAddress": "/active"
+              }
+            ],
+            "editorIsCollapsed": true
+          },
+          {
+            "parameters": [
+              {
+                "value": false,
+                "controlAddress": "/active"
+              }
+            ],
+            "editorIsCollapsed": true
+          },
+          {
+            "editorIsCollapsed": true
+          },
+          {
+            "editorIsCollapsed": true
+          }
+        ],
+        "numChannels": 6
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              -693.551025390625,
+              -753.6326293945312
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              391.0,
+              295.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/channelPerTrack"
+          }
+        ],
+        "niceName": "Bass Looper",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "Audio Looper",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+        },
+        "controls": {
+        },
+        "trackParameters": {
+        },
+        "recording": {
+          "parameters": [
+            {
+              "value": 0.07131783664226532,
+              "controlAddress": "/firstRecThreshold",
+              "enabled": true
+            },
+            {
+              "value": "First Loop",
+              "controlAddress": "/retroRecMode"
+            }
+          ]
+        },
+        "saveAndLoad": {
+          "parameters": [
+            {
+              "value": "Auto",
+              "controlAddress": "/saveLoadMode"
+            },
+            {
+              "value": "bassLooper",
+              "controlAddress": "/sampleDirectory"
+            }
+          ]
+        },
+        "tracks": [
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          }
+        ]
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              -688.3265380859375,
+              -412.7347106933594
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              396.0,
+              249.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/channelPerTrack"
+          }
+        ],
+        "niceName": "Guitar Looper",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "Audio Looper",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+        },
+        "controls": {
+        },
+        "trackParameters": {
+        },
+        "recording": {
+          "parameters": [
+            {
+              "value": 0.0446116030216217,
+              "controlAddress": "/firstRecThreshold",
+              "enabled": true
+            },
+            {
+              "value": "First Loop",
+              "controlAddress": "/retroRecMode"
+            }
+          ]
+        },
+        "saveAndLoad": {
+        },
+        "tracks": [
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          }
+        ]
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              -693.2821655273438,
+              186.3529357910156
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              396.0,
+              249.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/channelPerTrack"
+          }
+        ],
+        "niceName": "Wind Looper",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "Audio Looper",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+        },
+        "controls": {
+        },
+        "trackParameters": {
+        },
+        "recording": {
+          "parameters": [
+            {
+              "value": 0.0446116030216217,
+              "controlAddress": "/firstRecThreshold",
+              "enabled": true
+            },
+            {
+              "value": "First Loop",
+              "controlAddress": "/retroRecMode"
+            },
+            {
+              "value": 2,
+              "hexMode": false,
+              "controlAddress": "/retroRecCount"
+            }
+          ]
+        },
+        "saveAndLoad": {
+        },
+        "tracks": [
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          },
+          {
+            "editorIsCollapsed": true,
+            "hideInEditor": true
+          }
+        ]
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              419.2653198242188,
+              -105.7959136962891
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              150.0,
+              180.0
+            ],
+            "controlAddress": "/viewUISize"
+          }
+        ],
+        "niceName": "Audio Out",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "Audio Out",
+        "out": {
+          "parameters": [
+            {
+              "value": 0.8241379261016846,
+              "controlAddress": "/gain"
+            }
+          ],
+          "editorIsCollapsed": true
+        },
+        "view": {
+        },
+        "channels": [
+          {
+            "editorIsCollapsed": true
+          }
+        ],
+        "numChannels": 1
+      },
+      {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": [
+              -936.4898071289062,
+              -753.6326293945312
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              196.4898071289062,
+              160.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioInputs",
+            "enabled": false
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioOutputs",
+            "enabled": false
+          },
+          {
+            "value": "TSE AUDIO/BOD_x64",
+            "vstID": 1414742596,
+            "controlAddress": "/vst"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/numMacros"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/autoBypassMacro",
+            "enabled": true
+          },
+          {
+            "value": [
+              0.9874213933944702,
+              1.0
+            ],
+            "controlAddress": "/autoBypassRange"
+          }
+        ],
+        "niceName": "BassAmp",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "VST",
+        "out": {
+          "parameters": [
+            {
+              "value": 1.0,
+              "controlAddress": "/gain"
+            }
+          ],
+          "editorIsCollapsed": true
+        },
+        "view": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/showOutControl"
+            }
+          ]
+        },
+        "midi": {
+          "parameters": [
+            {
+              "value": "",
+              "controlAddress": "/midiInterface"
+            }
+          ],
+          "editorIsCollapsed": true,
+          "containers": {
+            "channelFilter": {
+              "editorIsCollapsed": true
+            }
+          }
+        },
+        "vstState": "702.CMlaKA....fQBMDZ....AP0TBQD.C.......A.............................................................................................................................................................................f.dX0PxDREB...7HzSDY2Lf7jckI2bg0Fbrklam0iHvHBHM8laukjavUGcCgVXt4VYr0iHvHBHSQWYxU1aM8FYk0iHvHhO7.UPRETSfjFY8HhPOQzWI4Fb0QmHfXWXrUWY8HBLtTiHu3COPEjTA0DHoQVOhHzSD8ESkYWYrIBH1EFa0UVOh.iK3TSL4jSN4jCNvjiL1TSLyXyMwjiHu3COPEjTA0DHoQVOhHzSD8EQxklckIBH1EFa0UVOh.iKxPyM4jSN4jSM4PiM3fCMwTSMxbiHu3COPEjTA0DHoQVOhHzSD8kPgM2bh.hcgwVck0iHv3hM0HCLv.CLw.CLwLSM3.yLxHiL2HxK9vCTAIUPMARZj0iHB8DQeQkbkIFakIBH1EFa0UVOh.iKy.CLv.CLvDSL4HCL4HCN4TSMvfiHu3COPEjTA0DHoQVOhHzSD8ETxU1bk41XkIBH1EFa0UVOh.iK1TiMv.CLvDCNwDSN3DiLvDSL2HiHu3COPEjTA0DHoQVOhHzSD8kPrUlajIBH1EFa0UVOh.iHu3COPEjTA0DHoQVOhHzSD8kP4AWXyMmHfXWXrUWY8HBLh7hO7.UPRETSfjFY8HhPOQzWQUWXrkFc4IBH1EFa0UVOh.iHu3COPEjTA0DHoQVOhHzSD80S0QGb0QmHfXWXrUWY8HBLtTCM2jSN4jyM3.iM0PSNvbiLxXiMh7hO77hPOQjcy3C.",
+        "vstParams": [
+          {
+            "index": 0,
+            "value": 0.5
+          },
+          {
+            "index": 1,
+            "value": 0.8519999980926514
+          },
+          {
+            "index": 2,
+            "value": 0.2479999959468842
+          },
+          {
+            "index": 3,
+            "value": 0.6520000100135803
+          },
+          {
+            "index": 4,
+            "value": 0.300000011920929
+          },
+          {
+            "index": 5,
+            "value": 0.656000018119812
+          },
+          {
+            "index": 7,
+            "exposed": true,
+            "macroIndex": 0
+          },
+          {
+            "index": 9,
+            "value": 0.5479999780654907
+          }
+        ],
+        "macros": {
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": [
+              -220.7346954345703,
+              -659.5918579101562
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              210.0,
+              59.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioInputs",
+            "enabled": false
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioOutputs",
+            "enabled": false
+          },
+          {
+            "value": "Sixth Sample/Cramit",
+            "vstID": -1331947008,
+            "controlAddress": "/vst"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/numMacros"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/autoBypassMacro",
+            "enabled": true
+          },
+          {
+            "value": [
+              0.0,
+              0.0
+            ],
+            "controlAddress": "/autoBypassRange"
+          }
+        ],
+        "niceName": "BassCompressor",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "VST",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/showOutControl"
+            }
+          ]
+        },
+        "midi": {
+          "parameters": [
+            {
+              "value": "",
+              "controlAddress": "/midiInterface"
+            }
+          ],
+          "containers": {
+            "channelFilter": {
+              "editorIsCollapsed": true
+            }
+          }
+        },
+        "vstState": "1951.VMjLgX4A...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DyL2fiKV0jZLcldQEjKt3xSqX1UgIWPnM1ZIIiXugCaggCRRwDctjFRlQEagkFNFk0azDSV3fjTUQUVTszLHg2S43hPOAUQrI1YvDiXl4RahsVSWkkdzPEVyUkUOgldRoEcqYzXygjPHYWRWkUdUYzXIEkUOgFQogjYtzlXqEEUZkWTxDFdQckV0QSLTs1cVkUZQcUVpASZHcGRn8zMtTETRUDUSYlZFkENHgFVzDzUXkWSGI0aiYjVn4BZic1cVM1ZvjFR1MiPLg1Mn8zMtTETRUDUSYlZFkENHgFVzDzUXkWSGMUci0FRlg0UXIWUWkENHIDSz4RZHU2LC8DTEoFUAACQH8VTV8DZHYEY1UTLhkGLTokZIIDRwTjQgASUV8DZtj1R1gDdKkicCQUPIUETMEjTZoFLogjZUYjX5cFaHYFVWgkbUcUV3fjPLQGVowjctLDS14xPLomXo0zLLkWS2gUZHU2LC8DTEoFUAACQH8VTV8DZTYDY1UDagk2ZwDFcmQkVscFaHYFVWgkbUcUV3fjPLQmKogTcyLzSPUjZTEDLDgzaQY0SnQkQjYWQrEVdqESXzcmdgISRBgTLEYTXvTkUOglKosjcHg2R4X2PTETRUAUSAIkVpASZHs1YGI1YzDiXugCag0zZFkEZtf1XmcmUisFLogjcyHDSncCZOciKUAkTEQ0TlolQYgCRRoEcIIDRwTjQgASUV8DZtj1R1gDdKkicCQUPIUETMEjTZoFLogzbqYDYn4BZic1cVM1ZvjFR1MiTNICVowTLDMESzX1TMgmKo0TLtLTSncCZOciKUAkTEQ0TlolQYgCR3EFLQ0FRlg0UXIWUWkENHIDSz4xTLEiKCwjctjGS3AUZLomZowTLhkVSncCZOciKUAkTEQ0TlolQYgCRBIVcMczXDsVLhoWRBgTLEYTXvTkUOglKosjcHg2R4X2PTETRUAUSAIkVpASZHYGNwHldQolXuk0UYglKnM1Y2Y0XqASZHY2LBwDZ2f1S23RUPIUQTMkYpYTV3fjPhUWSGM1QEYkVzkjPHESQFEFLUY0Sn4RZKYGQo0jctLDS1wTZLoGRC0DMHkVSxfUZHU2LC8DTEoFUAACQH8VTV8DZtHSX4E0QUQSPWkEZtf1XmcmUisFLogjcyHDSncCZOciKUAkTEQ0TlolQYgCRBIFdUYTTu0zQiglKnM1Y2Y0XqASZHY2LBwDZ2f1S23RUPIUQTMkYpYTV3fjPhgWUFEEdqw1XqkjPHESQFEFLUY0Sn4RZKYGR3sTN1MDUAkTUP0TPRokZvjFR1kzUYcTQVoEcIIDRwTjQgASUV8DZtj1R1gzPMYmKCwjcPMjSwvTdMkmZCwzcPkFR0MyPOAUQpQUPvPDRuEkUOglKsI1ZQUEY1UEaHYFVWgkbUcUV3fjPLQmKo0jctLDS14xPLgGSC4jdDMjSvH1TNg1Mn8zMtTETRUDUSYlZFkENHgmX0cWLggzZwjkaIIDRwTjQgASUV8DZtj1R1gDdKkicCQUPIUETMEjTZoFLogTd3XTX0cmdgISRBgTLEYTXvTkUOglKosjcHg2R4X2PTETRUAUSAIkVpASZHkGNFEVcvPkVpkjPHESQFEFLUY0Sn4RZKYGR3sTN1MDUAkTUP0TPRokZvjFR4EzUYsVTrgjYXcEVxU0UYgCRBwDcDMjS54xPLYmKCwjcLMUSxfUZLIiZogTcyLzSPUjZTEDLDgzaQY0SnA0QZgWUwHla3XTXpkjdgoWTxD1bmQkVscFaHYFVWgkbUcUV3fjPLQGRS4zcpkWS1I1PNQCT4wDdTkFSvfUZHU2LC8DTEoFUAACQH8VTV8DZPcjV3UULh4FNFElZIoWX5EkLgM2c5ElLIIDRwTjQgASUV8DZtj1R4gzTLcGV40DMDkVS1Q0TNomZC0DZ2f1S23RUPIUQTMkYpYTV3fjPi4VRWkUdmESXxEEaPUWTGMVcvX0TuEEaHYFVWgkbUcUV3fjPLQGR40jLLkWS3wzPLYGVowjdlMTSx.UZHU2LC8DTEoFUAACQH8VTV8DZPcjV3UULh4FNFElZQASX1cFUZ01YrgjYXcEVxU0UYgCRBwDcTMUSwfzTMYmKS4DLLkVSx.UdLcGVogTcyLzSPUjZTEDLDgzaQY0SnA0QZgWUwHla3XTXpEELgY2c5ElLIIDRwTjQgASUV8DZtj1RvfzTMACT40DLtLTS5gzTMYGTC4zLHg2R4X2PTETRUAUSAIkVpASZHo2YrI1ZMcjV0cmQYQENFIVSqYTVn4BZic1cVM1ZvjFR1MCZMkGUCwTdXMUS3Y1TLcmKS0jcPkFSncCZOcyMBQ0YIcEVy0TaO4hKt3hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEVtPDTtHzZGI1YMIiXtPDTtLjKPcjKt3hKt3hKt3haTU0PUQDU3sFaicVTWkEQEYzXmEDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO..",
+        "vstParams": [
+          {
+            "index": 0,
+            "value": 0.321167916059494
+          },
+          {
+            "index": 1,
+            "value": 0.5255475044250488
+          },
+          {
+            "index": 2,
+            "value": 0.2773723006248474
+          },
+          {
+            "index": 3,
+            "value": 0.6350365281105042
+          },
+          {
+            "index": 4,
+            "value": 0.2919707894325256
+          },
+          {
+            "index": 5,
+            "value": 0.5562500953674316
+          },
+          {
+            "index": 19,
+            "value": 0.06000000238418579
+          },
+          {
+            "index": 21,
+            "value": 0.5120000243186951
+          },
+          {
+            "index": 22,
+            "value": 0.5080000162124634
+          },
+          {
+            "index": 24,
+            "value": 0.1840000003576279
+          },
+          {
+            "index": 25,
+            "value": 0.6200000047683716
+          },
+          {
+            "index": 26,
+            "value": 0.5080000162124634
+          },
+          {
+            "index": 27,
+            "exposed": true,
+            "macroIndex": 0,
+            "value": 0.9762611389160156
+          }
+        ],
+        "macros": {
+          "parameters": [
+            {
+              "value": 0.9762611389160156,
+              "minValue": 0.0,
+              "maxValue": 1.0,
+              "default": 0.0,
+              "controlAddress": "/macro1"
+            }
+          ]
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": [
+              -221.9183807373047,
+              -746.1837158203125
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              210.0,
+              57.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioInputs",
+            "enabled": false
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioOutputs",
+            "enabled": false
+          },
+          {
+            "value": "Kilohearts/kHs Filter",
+            "vstID": -156474928,
+            "controlAddress": "/vst"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/numMacros"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/autoBypassMacro",
+            "enabled": true
+          },
+          {
+            "value": [
+              0.9711320996284485,
+              1.0
+            ],
+            "controlAddress": "/autoBypassRange"
+          }
+        ],
+        "niceName": "BassFilter",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "VST",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/showOutControl"
+            }
+          ]
+        },
+        "midi": {
+          "parameters": [
+            {
+              "value": "",
+              "controlAddress": "/midiInterface"
+            }
+          ],
+          "editorIsCollapsed": true,
+          "containers": {
+            "channelFilter": {
+              "editorIsCollapsed": true
+            }
+          }
+        },
+        "vstState": "2883.VMjLgnyB...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HCL2biKA4hKt3BUAIjKtXVPt3hKtDFTt3hKD4hKt3hKt3hKt3hKt3hKtPDTt3hKt3RPt3hKt3hKt3hKtfkctzTTvcTYE4RPvQ0L2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKtvyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C.",
+        "vstParams": [
+          {
+            "index": 2,
+            "exposed": true,
+            "macroIndex": 0,
+            "value": 0.637982189655304
+          },
+          {
+            "index": 3,
+            "value": 0.6587939262390137
+          },
+          {
+            "index": 4,
+            "value": 0.5300004482269287
+          }
+        ],
+        "macros": {
+          "parameters": [
+            {
+              "value": 0.637982189655304,
+              "minValue": 0.0,
+              "maxValue": 1.0,
+              "default": 0.0,
+              "controlAddress": "/macro1"
+            }
+          ]
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": [
+              -220.7346954345703,
+              -412.7346801757812
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              226.0,
+              57.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioInputs",
+            "enabled": false
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioOutputs",
+            "enabled": false
+          },
+          {
+            "value": "Kilohearts/kHs Filter",
+            "vstID": -156474928,
+            "controlAddress": "/vst"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/numMacros"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/autoBypassMacro",
+            "enabled": true
+          },
+          {
+            "value": [
+              0.9900000095367432,
+              1.0
+            ],
+            "controlAddress": "/autoBypassRange"
+          }
+        ],
+        "niceName": "GutarFilter",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "VST",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/showOutControl"
+            }
+          ]
+        },
+        "midi": {
+          "parameters": [
+            {
+              "value": "",
+              "controlAddress": "/midiInterface"
+            }
+          ],
+          "containers": {
+            "channelFilter": {
+              "editorIsCollapsed": true
+            }
+          }
+        },
+        "vstState": "2883.VMjLgnyB...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HCL2biKA4hKt3BUAIjKtXVPt3hKtDFTt3hKD4hKt3hKt3hKt3hKt3hKtPDTt3hKt3RPt3hKt3hKt3hKtTEUAIUTMk0MZ4xY1rxJBQjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKtvyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C.",
+        "vstParams": [
+          {
+            "index": 2,
+            "exposed": true,
+            "macroIndex": 0,
+            "value": 0.7002967000007629
+          },
+          {
+            "index": 3,
+            "value": 0.753333568572998
+          },
+          {
+            "index": 4,
+            "value": 0.7499985694885254
+          }
+        ],
+        "macros": {
+          "parameters": [
+            {
+              "value": 0.7002967000007629,
+              "minValue": 0.0,
+              "maxValue": 1.0,
+              "default": 0.0,
+              "controlAddress": "/macro1"
+            }
+          ]
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              -1183.346923828125,
+              -745.7958984375
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              200.0,
+              150.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioInputs",
+            "enabled": false
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioOutputs",
+            "enabled": false
+          },
+          {
+            "value": "Kilohearts/kHs Gain",
+            "vstID": -2020951961,
+            "controlAddress": "/vst"
+          }
+        ],
+        "niceName": "BassGain",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "VST",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+        },
+        "midi": {
+          "parameters": [
+            {
+              "value": "",
+              "controlAddress": "/midiInterface"
+            }
+          ],
+          "containers": {
+            "channelFilter": {
+              "editorIsCollapsed": true
+            }
+          }
+        },
+        "vstState": "2867.VMjLgnxB...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HCL1TiKA4hKt3hZtHjKtXVPt3hKtnETt3hKD4hKt3hKt3hKt3hKt3hKtPDTt3hKt3RPt3hKtXWbJkSQD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3hK77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..",
+        "vstParams": [
+          {
+            "index": 1,
+            "value": 0.900333046913147
+          }
+        ],
+        "macros": {
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": [
+              -976.9796142578125,
+              -412.7346801757812
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              227.0,
+              64.91836547851562
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioInputs",
+            "enabled": false
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioOutputs",
+            "enabled": false
+          },
+          {
+            "value": "Blue Cat Audio/BC Free Amp VST",
+            "vstID": 1853451375,
+            "controlAddress": "/vst"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/numMacros"
+          },
+          {
+            "value": 1,
+            "hexMode": false,
+            "controlAddress": "/autoBypassMacro",
+            "enabled": true
+          },
+          {
+            "value": [
+              0.9880502820014954,
+              1.0
+            ],
+            "controlAddress": "/autoBypassRange"
+          }
+        ],
+        "niceName": "GuitarAmp",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "VST",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/showOutControl"
+            }
+          ]
+        },
+        "midi": {
+          "parameters": [
+            {
+              "value": "",
+              "controlAddress": "/midiInterface"
+            }
+          ],
+          "containers": {
+            "channelFilter": {
+              "editorIsCollapsed": true
+            }
+          }
+        },
+        "vstState": "1878.CMlaKA....fQBMDZ....A3Vdr8F...P.....A.............................................................................................................................................................................fA1xyO30FafXWYxMWZu4VOhDiKvHBHk41XuQVZtcVOhTEUF0BNh7iO7.kbkMWYzAhckI2bo8la8HBMh.Bbx81YNEVak0iHCwVXyMWZiABQxklckIBHiUmbxUlazAkbkMWYzYTZrUFTgQGZ8HxPrE1byk1XfPjboYWYt.mbkMWYzIBHiUmbxUlazAkbkMWYzYTZrUlTu8Fc8HBLh.RSIQTRI4Fb0QGQkYVX0wFc8HRLh.RSIQTROUGcvUGcDUlYgUGaz0iHwHBHMkDQIAkbuclbg01PnElamU1PnElatUFa8HRKwHhO7zTRDkzPu4Fcx8FarUlbtzVYzEFHr81XqUFY8HBLh7hO7zTRDkjSkgGcPIWYyUFcSUFczklamAxXnElatUFa8HBLh.ha00lXkIWOh.iHfzVZjkVQtElXrUFY8HBLh.Bc4AWY8HxPCIxK9vSSIQTRPIWY1AkbkMWYzMUYzQWZtcFHigVXt4VYr0iHvHBHtUWahUlb8HBLh.RaoQVZE4VXhwVYj0iHvHBHzkGbk0iHCMjHu3COo4Fb0QGTgIWXsMGHi8VctQWOhjiHf.GL8HBLh.BbwziH3HBHvISOhDiHf.2L8HRLtXSN4jSN4jSN4jSN4jSN4jSM0XiHf.GM8HRKxHBHvUSOhbiHf.mM8HBMh.Bb2ziHyPiHf.GN8HRMh7hO7jlavUGcCU2bz8VaPI2avUlbzkVYyAxXuUmaz0iHwHhO77lXpAiKsUFcgABauM1ZkQVOh.iHu3COuIlZv.RZy4TcrwVOh.iHfPWdvUVOhrWL1DSNzjiQE0RLAECLsPCMkUSK3.iQ1zBLBkCM1LTP1TiQ0HTeh3COYISN0Q1QVUGYHMGdNoVQ03DQrcjTSACdQQUQ2wDUQAiVTUEcOQjPG4TZvbWTpsFLNslSB4jZVcjSUoTNu3COu7lXpAiO77RZtAWczMTcyQ2asAkbuAWYxQWZkMmO7z1ajUFau3COGUURfXWYxMWZu4VOhDiHfT2bkQTYlEVcrQWOhDiHfL2Zo4lVu8Va8HRLh.xXnElamUFYSklaiUFTxU1bkQGSuEFYkQVOhDiH9vybqklafXWYxMWZu4VOhHiH9vybzEFckAhckI2bo8la8HRMh3COvElbg01bf.2PuUmaz0iHzHhO7.GLf3VXsUVOhPVZyAGagk2WsUFckI2bh.hcgwVck0iHwHxK9vCbw.hag0VY8HBcnUVak4xavE1XoQWdh.hcgwVck0iHw.CLh7hO7.mLf3VXsUVOhPGZk0VYtLGZuc2WyUFczklamMmHfXWXrUWY8HBLh7hO7.2Lf3VXsUVOhTWZew1aislHfXWXrUWY8HBLh7hO77BbgIWXsMmO7LGcxklamMGHyMza04Fc8HhLh3COyACHtEVak0iHo0Fb0w1bk8kbkMGbu41bk4BagMGcew1agQVYj8kYowVYvEFcnIBH1EFa0UVOhHxK9vybw.hag0VY8HRZsAWcrMWYeIWYyA2atMWYtLWYrU1XzUFYe4VXsUlHfXWXrUWY8HhHu3COuLGcxklamMmO7zVYzEFHsMza04Fc8HBMh3COsACHtEVak0iHjk1bvwVX48UakQWYxMmKsUFcgIhO7XWXrUWYfXWYxMWZu4VOhTiH9vCbgIWXsMGHvMza04Fc8HRLh3COvACHtEVak0iHr81XqUFYh.hcgwVck0iHvHxK9vyKvElbg01b9vyK1EFa0UlO77Rav3COsECHtEVak0iHo0Fb0w1bk8kbkMGbu41bk4xbkwVYiQWYj8kag0VYtzVYzElH9vicgwVckAhckI2bo8la8HRMh3COvElbg01bf.2PuUmaz0iHwHhO7.GLf3VXsUVOhv1aisVYjIBH1EFa0UVOh.iHu3COu.WXxEVay4COuXWXrUWY9vyKsEiO7zlLf3VXsUVOhPGZk0VYt7FbgMVZzkmKsUFcgIhO7XWXrUWYfXWYxMWZu4VOhTiH9vCbgIWXsMGHvMza04Fc8HRLh3COvACHtEVak0iHr81XqUFYh.hcgwVck0iHvHxK9vyKvElbg01b9vyK1EFa0UlO77Rax3COsMCHtEVak0iHzgVYsUlKyg1a280bkQGco41Yy4RakQWXh3CO1EFa0UFH1Ulbyk1at0iH0HhO7.WXxEVayABbC8VctQWOhDiH9vCbv.hag0VY8HBauM1ZkQlHfXWXrUWY8HBLh7hO77BbgIWXsMmO77hcgwVck4COuz1L9vyKsUFcg4COuLGcgQWY9vyKysVZt4COubTUI4COu.kbkMWYz4C.",
+        "vstParams": [
+          {
+            "index": 0,
+            "exposed": true,
+            "macroIndex": 0
+          },
+          {
+            "index": 1,
+            "value": 0.699999988079071
+          },
+          {
+            "index": 2,
+            "value": 0.5
+          },
+          {
+            "index": 3,
+            "value": 0.1545454561710358
+          },
+          {
+            "index": 4,
+            "value": 0.449999988079071
+          },
+          {
+            "index": 5,
+            "value": 0.675000011920929
+          },
+          {
+            "index": 6,
+            "value": 0.6000000238418579
+          },
+          {
+            "index": 7,
+            "value": 0.3400000035762787
+          },
+          {
+            "index": 8,
+            "value": 0.625
+          }
+        ],
+        "macros": {
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              -195.9183654785156,
+              -286.0408020019531
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              226.0,
+              64.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioInputs",
+            "enabled": false
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioOutputs",
+            "enabled": false
+          },
+          {
+            "value": "TAL-Togu Audio Line/TAL Reverb 4 Plugin",
+            "vstID": 1700346114,
+            "controlAddress": "/vst"
+          }
+        ],
+        "niceName": "GuitarReverb",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "VST",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/showOutControl"
+            }
+          ]
+        },
+        "midi": {
+          "parameters": [
+            {
+              "value": "",
+              "controlAddress": "/midiInterface"
+            }
+          ],
+          "containers": {
+            "channelFilter": {
+              "editorIsCollapsed": true
+            }
+          }
+        },
+        "vstState": "1350.VMjLgzSA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9jiL33hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtvjKnYTR5AkaA4hKtfjYhsVVE0jKP4hKC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKB4RcUMTRSgTbJ4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogTdyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHsVVrk0ZMYzX3UEaisVRsgUczX0SnQTZKYGRBgzZYwVVq0jQigWUrM1ZI0FVmASLgACMFMFNHIDSzwTZLAiYC0DdPMkSzHVdLgmZ40zcHkFRlQEaYwVUwfkdIcUVwTEahgVSWoUazXEVxUjUgUWUsEldvjFR2MiPLglKRkEaYYUVoEUahsVVWkEdIYTVqcmUXQCLogjcyHDSn4hTYwVVVkUZQ0lXqk0UYgWRwH1aucUV3fjPLQGVo0TLTkVSynVdLomZSwjLPMUSn4hTYwVVVkUZQ0lXqk0UYgWRFEVcic0Sn4RZKQiK4wTLtjFS14xPMYGUSwDdtLjSvfjPHsVVrk0ZMYzX3UEaisVRsgkaqESVtASZHY2LnwDMpkWS3IVZMomYC0DMXkVS3I1PNglKRkEaYYUVoEUahsVVWkEdIYjXqUTLZgCRBwDcLMjSwPzTLoGVS0TLpkFSvfzPLcGTogjYTwVVrUULXoWRWkULUwlXnEzUYc1bVg0b3X0XzE0UOglKosTdpMTS14xTNcGQ4wTdDMESxfUdMECRBgzZYwVVq0jQiMGNFk0Y2YzXugCagkWPWk0ZQY0Sn4RZKIiZC4DdLMDS4Q0PLYGQ40DLPkWSwfjPHsVVrk0ZMYzXpUkQho2YV8DZtj1R3QUdLACV4wjLpMESvPTdLoGT4wDZtHUVrkkUYkVTGk0aYwVVvzzUYgCRBwDcLMUSzPUZMMCU4wTLHMjS2Q0PNAiXogjYPYUV1E0QZgCRBwDctjFRlAkUYYWTGo0YvDSXvPiQigCRBwDctjFRlwzQisVRWkUcvjFR2MiPLglKBkELMEiVuQSLYgCRBwDctjFRlwzUZoVUwfkaEYkVzASZHY2LBwDZtHTVmAiQhgCRBwDcDMTS1wTZLoGQC0DLTMUSv.0TNECRogjYHYkV50zUOgFQosjcHIDR4UjUgY2cVkEdEYzXqASZHc2LBwDZtHjX3gSLYgWQVEFcEYUXqASZHMTRWQVdQcEVxEDdPIWUVgEdIg2R4XWdKYWRxDVaIcEVy0TaOcyMBM1Y2w1St3hKt3hKt3hKt3hKJUELPUTPqI1aYcEV5UkQQcVTWgkKDAkKBs1QhcVSxHlKDAkKC4BTG4hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C.",
+        "vstParams": [
+          {
+            "index": 1,
+            "value": 0.3258424997329712
+          },
+          {
+            "index": 4,
+            "value": 0.66656893491745
+          },
+          {
+            "index": 5,
+            "value": 0.9036020040512085
+          },
+          {
+            "index": 6,
+            "value": 0.2997276484966278
+          },
+          {
+            "index": 7,
+            "value": 0.3861146569252014
+          },
+          {
+            "index": 8,
+            "value": 0.3940091133117676
+          },
+          {
+            "index": 9,
+            "value": 0.7982303500175476
+          },
+          {
+            "index": 10,
+            "value": 0.253563791513443
+          },
+          {
+            "index": 11,
+            "value": 0.3595685362815857
+          },
+          {
+            "index": 17,
+            "value": 0.1403241455554962
+          }
+        ],
+        "macros": {
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              -195.6495056152344,
+              186.3529357910156
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              226.0,
+              64.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioInputs",
+            "enabled": false
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioOutputs",
+            "enabled": false
+          },
+          {
+            "value": "TAL-Togu Audio Line/TAL Reverb 4 Plugin",
+            "vstID": 1700346114,
+            "controlAddress": "/vst"
+          }
+        ],
+        "niceName": "VST 3",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "VST",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/showOutControl"
+            }
+          ]
+        },
+        "midi": {
+          "parameters": [
+            {
+              "value": "",
+              "controlAddress": "/midiInterface"
+            }
+          ],
+          "containers": {
+            "channelFilter": {
+              "editorIsCollapsed": true
+            }
+          }
+        },
+        "vstState": "1350.VMjLgzSA...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9jiL33hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKtvjKnYTR5AkaA4hKtfjYhsVVE0jKP4hKC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKB4RcUMTRSgTbJ4hKtXWdOMCLFElYXcUV30zUZUGMV8DZDk1R1gjPHsFMwfUcQYkVzMlUOgFUEUkQvHjSncSZOYlcCM1Y2YDRoUUahYWRxDVaIcEVyASZHYGRBgTLUwlX4sVLgQGLogTdyHDSnMyPOYWRxDVaIcEVy0TaOciKsIVciwlXmAiQHsVVrk0ZMYzX3UEaisVRsgUczX0SnQTZKYGRBgzZYwVVq0jQigWUrM1ZI0FVmASLgACMFMFNHIDSzwTZLAiYC0DdPMkSzHVdLgmZ40zcHkFRlQEaYwVUwfkdIcUVwTEahgVSWoUazXEVxUjUgUWUsEldvjFR2MiPLglKRkEaYYUVoEUahsVVWkEdIYTVqcmUXQCLogjcyHDSn4hTYwVVVkUZQ0lXqk0UYgWRwH1aucUV3fjPLQGVo0TLTkVSynVdLomZSwjLPMUSn4hTYwVVVkUZQ0lXqk0UYgWRFEVcic0Sn4RZKQiK4wTLtjFS14xPMYGUSwDdtLjSvfjPHsVVrk0ZMYzX3UEaisVRsgkaqESVtASZHY2LnwDMpkWS3IVZMomYC0DMXkVS3I1PNglKRkEaYYUVoEUahsVVWkEdIYjXqUTLZgCRBwDcLMjSwPzTLoGVS0TLpkFSvfzPLcGTogjYTwVVrUULXoWRWkULUwlXnEzUYc1bVg0b3X0XzE0UOglKosTdpMTS14xTNcGQ4wTdDMESxfUdMECRBgzZYwVVq0jQiMGNFk0Y2YzXugCagkWPWk0ZQY0Sn4RZKIiZC4DdLMDS4Q0PLYGQ40DLPkWSwfjPHsVVrk0ZMYzXpUkQho2YV8DZtj1R3QUdLACV4wjLpMESvPTdLoGT4wDZtHUVrkkUYkVTGk0aYwVVvzzUYgCRBwDcLMUSzPUZMMCU4wTLHMjS2Q0PNAiXogjYPYUV1E0QZgCRBwDctjFRlAkUYYWTGo0YvDSXvPiQigCRBwDctjFRlwzQisVRWkUcvjFR2MiPLglKBkELMEiVuQSLYgCRBwDctjFRlwzUZoVUwfkaEYkVzASZHY2LBwDZtHTVmAiQhgCRBwDcDMTS1wTZLoGQC0DLTMUSv.0TNECRogjYHYkV50zUOgFQosjcHIDR4UjUgY2cVkEdEYzXqASZHc2LBwDZtHjX3gSLYgWQVEFcEYUXqASZHMTRWQVdQcEVxEDdPIWUVgEdIg2R4XWdKYWRxDVaIcEVy0TaOcyMBM1Y2w1St3hKt3hKt3hKt3hKJUELPUTPqI1aYcEV5UkQQcVTWgkKDAkKBs1QhcVSxHlKDAkKC4BTG4hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C.",
+        "vstParams": [
+          {
+            "index": 1,
+            "value": 0.3258424997329712
+          },
+          {
+            "index": 4,
+            "value": 0.66656893491745
+          },
+          {
+            "index": 5,
+            "value": 0.9036020040512085
+          },
+          {
+            "index": 6,
+            "value": 0.2997276484966278
+          },
+          {
+            "index": 7,
+            "value": 0.3861146569252014
+          },
+          {
+            "index": 8,
+            "value": 0.3940091133117676
+          },
+          {
+            "index": 9,
+            "value": 0.7982303500175476
+          },
+          {
+            "index": 10,
+            "value": 0.253563791513443
+          },
+          {
+            "index": 11,
+            "value": 0.3595685362815857
+          },
+          {
+            "index": 17,
+            "value": 0.1403241455554962
+          }
+        ],
+        "macros": {
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": [
+              -1243.428588867188,
+              -412.7346801757812
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              210.0,
+              143.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioInputs",
+            "enabled": false
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioOutputs",
+            "enabled": false
+          },
+          {
+            "value": "Kilohearts/kHs Gate",
+            "vstID": -1600427147,
+            "controlAddress": "/vst"
+          }
+        ],
+        "niceName": "GuitarGate",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "VST",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+        },
+        "midi": {
+          "parameters": [
+            {
+              "value": "",
+              "controlAddress": "/midiInterface"
+            }
+          ],
+          "containers": {
+            "channelFilter": {
+              "editorIsCollapsed": true
+            }
+          }
+        },
+        "vstState": "2913.VMjLgf0B...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HSLv.iKA4hKt3hcBIjKtXVPt3hKt.ETt3hKD4hKt3hKt3hKt3hKt3hKtPDTt3hKt3xJqcWU2XGdsg0bCgDdgA2Sy.CTxXCSrshKAoWbIQmdOEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtbyJqrxJq3hKt3hKOkEaYwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C.",
+        "vstParams": [
+          {
+            "index": 0,
+            "value": 0.4792736172676086
+          },
+          {
+            "index": 1,
+            "value": 0.16347835958004
+          },
+          {
+            "index": 2,
+            "value": 0.7916668653488159
+          },
+          {
+            "index": 3,
+            "value": 0.251226007938385
+          },
+          {
+            "index": 4,
+            "value": 0.4793631434440613
+          },
+          {
+            "index": 5,
+            "value": 0.8916667699813843
+          }
+        ],
+        "macros": {
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              -1014.588256835938,
+              186.3529357910156
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              210.0,
+              143.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioInputs",
+            "enabled": false
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioOutputs",
+            "enabled": false
+          },
+          {
+            "value": "Kilohearts/kHs Gate",
+            "vstID": -1600427147,
+            "controlAddress": "/vst"
+          }
+        ],
+        "niceName": "VST 5",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "VST",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+        },
+        "midi": {
+          "parameters": [
+            {
+              "value": "",
+              "controlAddress": "/midiInterface"
+            }
+          ],
+          "containers": {
+            "channelFilter": {
+              "editorIsCollapsed": true
+            }
+          }
+        },
+        "vstState": "2913.VMjLgf0B...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HSLv.iKA4hKt3hcBIjKtXVPt3hKt.ETt3hKD4hKt3hKt3hKt3hKt3hKtPDTt3hKt3xJqcWU2XGdsg0bCgDdgA2SFASblcicpIGcCQjKt3xLOEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtbyJqrxJq3hKt3hKOkEaYwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C.",
+        "vstParams": [
+          {
+            "index": 0,
+            "value": 0.4792736172676086
+          },
+          {
+            "index": 1,
+            "value": 0.16347835958004
+          },
+          {
+            "index": 2,
+            "value": 0.7916668653488159
+          },
+          {
+            "index": 3,
+            "value": 0.3645504713058472
+          },
+          {
+            "index": 4,
+            "value": 0.8726960420608521
+          }
+        ],
+        "macros": {
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              -1485.061279296875,
+              -753.6326293945312
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              221.0,
+              153.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioInputs",
+            "enabled": false
+          },
+          {
+            "value": 2,
+            "hexMode": false,
+            "controlAddress": "/audioOutputs",
+            "enabled": false
+          },
+          {
+            "value": "Kilohearts/kHs Gate",
+            "vstID": -1600427147,
+            "controlAddress": "/vst"
+          }
+        ],
+        "niceName": "BassGate",
+        "editorIsCollapsed": true,
+        "hideInEditor": true,
+        "type": "VST",
+        "out": {
+          "editorIsCollapsed": true
+        },
+        "view": {
+        },
+        "midi": {
+          "parameters": [
+            {
+              "value": "",
+              "controlAddress": "/midiInterface"
+            }
+          ],
+          "containers": {
+            "channelFilter": {
+              "editorIsCollapsed": true
+            }
+          }
+        },
+        "vstState": "2913.VMjLgf0B...O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HSLv.iKA4hKt3hcBIjKtXVPt3hKt.ETt3hKD4hKt3hKt3hKt3hKt3hKtPDTt3hKt3xJqcWU2XGdsg0b4YmdxP2S1UzctXibOYmcqLjKt3xLOEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtbyJqrxJq3hKt3hKOkEaYwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C.",
+        "vstParams": [
+          {
+            "index": 0,
+            "value": 0.4792736172676086
+          },
+          {
+            "index": 1,
+            "value": 0.16347835958004
+          },
+          {
+            "index": 2,
+            "value": 0.8400001525878906
+          },
+          {
+            "index": 3,
+            "value": 0.09121733158826828
+          },
+          {
+            "index": 4,
+            "value": 0.2743632197380066
+          }
+        ],
+        "macros": {
+        }
+      }
+    ],
+    "viewOffset": [
+      517,
+      74
+    ],
+    "viewZoom": 0.53125,
+    "looperControl": {
+    },
+    "connections": {
+      "hideInEditor": true,
+      "items": [
+        {
+          "niceName": "VST 3 > VST 4",
+          "type": "BaseItem",
+          "sourceNode": "bassFilter",
+          "destNode": "bassCompressor",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "VST 4 > Audio Out",
+          "type": "BaseItem",
+          "sourceNode": "bassCompressor",
+          "destNode": "audioOut",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "VST > VST 2",
+          "type": "BaseItem",
+          "sourceNode": "gutarFilter",
+          "destNode": "guitarReverb",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "niceName": "VST 2 > Audio Out",
+          "type": "BaseItem",
+          "sourceNode": "guitarReverb",
+          "destNode": "audioOut",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "Audio In > VST 4",
+          "type": "BaseItem",
+          "sourceNode": "audioIn",
+          "destNode": "guitarGate",
+          "connectionType": 0,
+          "channels": [
+            [
+              4,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "Audio In > VST 6",
+          "type": "BaseItem",
+          "sourceNode": "audioIn",
+          "destNode": "bassGate",
+          "connectionType": 0,
+          "channels": [
+            [
+              5,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "Audio In > VST 5",
+          "type": "BaseItem",
+          "sourceNode": "audioIn",
+          "destNode": "vst5",
+          "connectionType": 0,
+          "channels": [
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "VST 5 > Audio Looper 2",
+          "type": "BaseItem",
+          "sourceNode": "vst5",
+          "destNode": "windLooper",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "Audio Looper 2 > VST 3",
+          "type": "BaseItem",
+          "sourceNode": "windLooper",
+          "destNode": "vst3",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "VST 3 > Audio Out",
+          "type": "BaseItem",
+          "sourceNode": "vst3",
+          "destNode": "audioOut",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "VST 1 > Audio Looper 1",
+          "type": "BaseItem",
+          "sourceNode": "guitarAmp",
+          "destNode": "guitarLooper",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "VST 4 > VST 1",
+          "type": "BaseItem",
+          "sourceNode": "guitarGate",
+          "destNode": "guitarAmp",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "niceName": "Audio Looper 1 > VST",
+          "type": "BaseItem",
+          "sourceNode": "guitarLooper",
+          "destNode": "gutarFilter",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "BassAmp > Audio Looper",
+          "type": "BaseItem",
+          "sourceNode": "bassAmp",
+          "destNode": "bassLooper",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "Audio Looper > BassFilter",
+          "type": "BaseItem",
+          "sourceNode": "bassLooper",
+          "destNode": "bassFilter",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "niceName": "VST 6 > VST 7",
+          "type": "BaseItem",
+          "sourceNode": "bassGate",
+          "destNode": "bassGain",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "niceName": "VST 7 > BassAmp",
+          "type": "BaseItem",
+          "sourceNode": "bassGain",
+          "destNode": "bassAmp",
+          "connectionType": 0,
+          "channels": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    }
+  },
+  "transport": {
+    "parameters": [
+      {
+        "value": 54.54320580474935,
+        "controlAddress": "/bpm"
+      },
+      {
+        "value": [
+          50.0,
+          190.0
+        ],
+        "controlAddress": "/autoQuantizBPMRange"
+      }
+    ]
+  },
+  "mappings": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "presets": {
+    "parameters": [
+      {
+        "value": "",
+        "controlAddress": "/presetOnFileLoad"
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "interfaces": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  }
+}
