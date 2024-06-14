@@ -4,3 +4,11 @@ legacy/Interactive Orchestra_autosave/
 *.pkf
 
 InteractiveOrchestra_autosave/
+
+crashlog.dmp
+
+crashlog.txt
+
+Records/
+
+InteractiveOrchestra_recovered.lgml

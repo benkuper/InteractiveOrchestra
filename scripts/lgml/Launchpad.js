@@ -166,10 +166,15 @@ function onPress(row, column) {
 		} else if (row == 6 && column == 7) {
 			setQuantizMode(!quantizMode);
 		} else if (row == 0 && column == 7) {
-			recorderNode.getTarget().rec.trigger();
+			var r = recorderNode.getTarget();
+			if(r != null) r.rec.trigger();
 		} else if (row == 0 && column < NUM_MICS) {
-			var micActive = audioIn.getTarget().channels.getChild(column + 1).active;
-			micActive.set(!micActive.get());
+			var a = audioIn.getTarget();
+			if(a != null)
+			{
+				var micActive = a.channels.getChild(column + 1).active;
+				micActive.set(!micActive.get());
+			}
 		}
 	}
 
