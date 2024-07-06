@@ -97,7 +97,7 @@ var audioIn = addNodeTargetParam("Audio In");
 
 
 function init() {
-	script.setUpdateRate(10);
+	script.setUpdateRate((5));
 	initLaunchpad();
 
 }
@@ -268,6 +268,7 @@ function setPadColor(row, column, color) {
 
 
 function updatePadColor(row, column) {
+    
 	if (isTrack(row, column)) {
 		var looperIndex = row - 1;
 		var pad = getTrackOnPad(row, column);
@@ -298,7 +299,8 @@ function updatePadColor(row, column) {
 		} else if (row == 0 && column == 8) {
 			if (recorderNode.getTarget() != null) setPadColor(row, column, recorderNode.getTarget().isRecording.get() ? [1, 0, 0] : [0, 0, 0]);
 		} else if (row == 0 && column < NUM_MICS) {
-			if (aaudioIn != null) setPadColor(row, column, audioIn.getTarget().channels.getChild(column + 1).active.get() ? [1, .5, 0] : [0, 0, 0]);
+            var micActive = audioIn.getTarget().channels.getChild(column + 1).active.get();
+			setPadColor(row, column, micActive ? [1, .5, 0] : [.1,.1,.1]);
 		}
 	}
 
@@ -384,6 +386,8 @@ function sendColor(row, column, r, g, b) {
 
 function initLaunchpad() {
 	sendCommand(CMD_PRG_LIVE_MODE, 1); //switch to programmer mode
+    local.enabled.set(false);
+    local.enabled.set(true);
 	clearColors();
 	updateColors();
 
