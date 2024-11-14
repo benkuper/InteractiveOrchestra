@@ -72,8 +72,11 @@ var highBrightness = script.addFloatParameter("High Brightness", "", 1, 0, 1);
 var longPressTime = script.addFloatParameter("Long Press Time", "", .2, 0, 1);
 
 var loopers = [];
+var looperTargets = [];
+
 for (var i = 0; i < NUM_LOOPERS; i++) loopers[i] = addNodeTargetParam("Looper " + i);
 var quantizLoopers = [true, true, true, true, true];
+
 
 var quantizMode = true;
 
@@ -97,19 +100,28 @@ var audioIn = addNodeTargetParam("Audio In");
 
 
 function init() {
-	script.setUpdateRate((5));
+	script.setUpdateRate(15);
 	initLaunchpad();
-
+	for (var i = 0; i < NUM_LOOPERS; i++) {
+		looperTargets[i] = loopers[i].getTarget();
+	}
 }
 
-
-
-/*
- This function, if you declare it, will launch a timer at 50hz, calling this method on each tick
-*/
+function scriptParameterChanged(param) {
+	for (var i = 0; i < NUM_LOOPERS; i++) {
+		if (param == loopers[i]) {
+			script.log("update looper target");
+			looperTargets[i] = loopers[i].getTarget();
+		}
+	}
+}
+// /*
+//  This function, if you declare it, will launch a timer at 50hz, calling this method on each tick
+// */
 
 function update(deltaTime) {
 	var time = util.getTime();
+
 
 	for (var i = 0; i < ROWS; i++) {
 		for (var j = 0; j < COLUMNS; j++) {
@@ -125,12 +137,14 @@ function update(deltaTime) {
 	}
 
 	updateColors();
+
 }
 
 
-// Interaction events
+// // Interaction events
 
 function onPress(row, column) {
+
 	pressTimes[row][column] = util.getTime();
 
 	if (isTrack(row, column)) {
@@ -159,6 +173,7 @@ function onPress(row, column) {
 			for (var i = 0; i < PIANO_VSTS; i++) {
 				var vst = pianoVST[i].getTarget();
 				if (vst != null) vst.enabled.set(i == column);
+				updatePadColor(8, i);
 			}
 		} else if (row == 7 && column < singleVSTS.length) {
 			var vst = singleVSTS[column].getTarget();
@@ -167,16 +182,14 @@ function onPress(row, column) {
 			setQuantizMode(!quantizMode);
 		} else if (row == 0 && column == 7) {
 			var r = recorderNode.getTarget();
-			if(r != null) r.rec.trigger();
+			if (r != null) r.rec.trigger();
 		} else if (row == 0 && column < NUM_MICS) {
 			var a = audioIn.getTarget();
-			if(a != null)
-			{
-                var mic = a.channels[(column + 1).toFixed()];
-                if(mic)
-                {
-                    mic.active.set(!mic.active.get());
-                }
+			if (a != null) {
+				var mic = a.channels[(column + 1).toFixed()];
+				if (mic) {
+					mic.active.set(!mic.active.get());
+				}
 			}
 		}
 	}
@@ -186,7 +199,6 @@ function onPress(row, column) {
 }
 
 function onRelease(row, column) {
-
 	pressTimes[row][column] = -1;
 	longPressed[row][column] = false;
 
@@ -213,10 +225,10 @@ function isPadPressed(row, column) {
 	return pressTimes[row][column] != -1;
 }
 
-//MIDI Events
+// //MIDI Events
 
 function noteOnEvent(channel, pitch, velocity) {
-	//script.log("Note on received "+channel+", "+pitch+", "+velocity);
+	// script.log("Note on received " + channel + ", " + pitch + ", " + velocity);
 	var row = ROWS - parseInt(Math.floor(pitch / 10));
 	var column = pitch % 10 - 1;
 	onPress(row, column);
@@ -224,7 +236,6 @@ function noteOnEvent(channel, pitch, velocity) {
 
 
 function noteOffEvent(channel, pitch, velocity) {
-	//script.log("Note off received "+channel+", "+pitch+", "+velocity);
 	var row = ROWS - Math.floor(pitch / 10);
 	var column = pitch % 10 - 1;
 	onRelease(row, column);
@@ -248,7 +259,7 @@ function afterTouchEvent(channel, note, value) {
 
 
 
-// Color Functions
+// // Color Functions
 function clearColors() {
 	for (var i = 0; i < ROWS; i++) {
 		for (var j = 0; j < COLUMNS; j++) {
@@ -266,51 +277,55 @@ function updateColors() {
 }
 
 function setPadColor(row, column, color) {
+	if (isPadPressed(row, column)) color = [color[0] + .5, color[1] + .5, color[2] + .5];
+
+	if (padColors[row][column][0] == color[0]
+		&& padColors[row][column][1] == color[1]
+		&& padColors[row][column][2] == color[2]
+	) return;
 	padColors[row][column] = color;
+
+	sendColor(row, column, color[0], color[1], color[2]);
 }
 
 
 function updatePadColor(row, column) {
-    
+
 	if (isTrack(row, column)) {
 		var looperIndex = row - 1;
 		var pad = getTrackOnPad(row, column);
 		if (pad != null) setPadColor(row, column, getColorForTrackState(looperIndex, pad.state.get()));
-	} else {
-		if (row == 0 && column == 3) {
-			setPadColor(row, column, root.transport.isPlaying.get() ? [1, .5, 0] : [.3, .3, .3]);
-		} else if (row >= 1 && row <= NUM_LOOPERS && column == 8) {
-			var pc = isOneTrackPlaying(row - 1) ? [1, .5, 0] : [.1, .1, .1];
-			setPadColor(row, column, pc);
-		} else if (row == 8 && column < PIANO_VSTS) {
-			var vst = pianoVST[column].getTarget();
-			if (vst != null) {
-				setPadColor(row, column, vst.enabled.get() ? [0, .5, 0] : getLowBrightness(white));
+	}
+	if (row == 0 && column == 3) {
+		setPadColor(row, column, root.transport.isPlaying.get() ? [1, .5, 0] : [.3, .3, .3]);
+	} else if (row >= 1 && row <= NUM_LOOPERS && column == 8) {
+		var pc = isOneTrackPlaying(row - 1) ? [1, .5, 0] : [.1, .1, .1];
+		setPadColor(row, column, pc);
+	} else if (row == 8 && column < PIANO_VSTS) {
+		var vst = pianoVST[column].getTarget();
+		if (vst != null) {
+			setPadColor(row, column, vst.enabled.get() ? [0, .5, 0] : getLowBrightness(white));
+		}
+	} else if (row == 7 && column < singleVSTS.length) {
+		var vst = singleVSTS[column].getTarget();
+		if (vst != null) {
+			var color = looperColors[singleVSTColorsIndices[column]];
+			setPadColor(row, column, vst.enabled.get() ? getHighBrightness(color) : getLowBrightness(color));
+		}
 
-			}
-		} else if (row == 7 && column < singleVSTS.length) {
-			var vst = singleVSTS[column].getTarget();
-			if (vst != null) {
-				var color = looperColors[singleVSTColorsIndices[column]];
-				setPadColor(row, column, vst.enabled.get() ? getHighBrightness(color) : getLowBrightness(color));
-			}
-
-		} else if (row == 6 && column == 7) {
-			setPadColor(row, column, quantizMode ? [0, 0, 0] : [1, .5, 0]);
-		} else if (row == 0 && column == 7) {
-			setPadColor(row, column, [.1, .1, .1]);
-		} else if (row == 0 && column == 8) {
-			if (recorderNode.getTarget() != null) setPadColor(row, column, recorderNode.getTarget().isRecording.get() ? [1, 0, 0] : [0, 0, 0]);
-		} else if (row == 0 && column < NUM_MICS) {
-            var mic = audioIn.getTarget().channels[(column + 1).toFixed()];
-            if(mic) setPadColor(row, column, mic.active ? [1, .5, 0] : [.1,.1,.1]);
+	} else if (row == 6 && column == 7) {
+		setPadColor(row, column, quantizMode ? [0, 0, 0] : [1, .5, 0]);
+	} else if (row == 0 && column == 7) {
+		setPadColor(row, column, [.1, .1, .1]);
+	} else if (row == 0 && column == 8) {
+		if (recorderNode.getTarget() != null) setPadColor(row, column, recorderNode.getTarget().isRecording.get() ? [1, 0, 0] : [0, 0, 0]);
+	} else if (row == 0 && column < NUM_MICS) {
+		var aIn = audioIn.getTarget();
+		if (aIn) {
+			var mic = aIn.channels[(column + 1).toFixed()];
+			if (mic) setPadColor(row, column, mic.active ? [1, .5, 0] : [.1, .1, .1]);
 		}
 	}
-
-	var c = padColors[row][column];
-	if (isPadPressed(row, column)) c = [c[0] + .5, c[1] + .5, c[2] + .5];
-
-	sendColor(row, column, c[0], c[1], c[2]);
 }
 
 
@@ -324,11 +339,11 @@ function getHighBrightness(c) {
 	return [c[0] * b, c[1] * b, c[2] * b];
 }
 
-// Looper / Track HELPERS
+// // Looper / Track HELPERS
 
 
 function getLooper(index) {
-	return loopers[index].getTarget();
+	return looperTargets[index];
 }
 
 function getLooperOnPad(row) {
@@ -341,7 +356,7 @@ function isTrack(row, column) {
 
 function getTrack(looperIndex, trackIndex) {
 	if (getLooper(looperIndex) == null) return null;
-    return getLooper(looperIndex).tracks[(trackIndex + 1).toFixed()];
+	return getLooper(looperIndex).tracks[(trackIndex + 1).toFixed()];
 }
 
 function getTrackOnPad(row, column) {
@@ -353,6 +368,8 @@ function getColorForTrackState(looperIndex, state) {
 		return getLowBrightness(looperColors[looperIndex]);
 	} else if (state == WILL_RECORD) {
 		return [.6, 0, .5];
+	} else if (state == RETRO_REC) {
+		return [.6, .3, .5];
 	} else if (state == RECORDING) {
 		return [1, 0, 0]
 	} else if (state == FINISH_REC) {
@@ -380,7 +397,7 @@ function setQuantizMode(mode) {
 
 }
 
-// LAUNCHPAD X commands
+// // LAUNCHPAD X commands
 function sendColor(row, column, r, g, b) {
 	var index = (ROWS - row) * 10 + column + 1;
 	sendCommand(CMD_LED_COLOR, [LIGHT_TYPE_RGB, index, Math.min(r, 1) * 127, Math.min(g, 1) * 127, Math.min(b, 1) * 127]);
@@ -389,8 +406,8 @@ function sendColor(row, column, r, g, b) {
 
 function initLaunchpad() {
 	sendCommand(CMD_PRG_LIVE_MODE, 1); //switch to programmer mode
-    local.enabled.set(false);
-    local.enabled.set(true);
+	local.enabled.set(false);
+	local.enabled.set(true);
 	clearColors();
 	updateColors();
 
