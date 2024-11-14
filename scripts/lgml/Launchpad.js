@@ -172,8 +172,11 @@ function onPress(row, column) {
 			var a = audioIn.getTarget();
 			if(a != null)
 			{
-				var micActive = a.channels.getChild(column + 1).active;
-				micActive.set(!micActive.get());
+                var mic = a.channels[(column + 1).toFixed()];
+                if(mic)
+                {
+                    mic.active.set(!mic.active.get());
+                }
 			}
 		}
 	}
@@ -299,8 +302,8 @@ function updatePadColor(row, column) {
 		} else if (row == 0 && column == 8) {
 			if (recorderNode.getTarget() != null) setPadColor(row, column, recorderNode.getTarget().isRecording.get() ? [1, 0, 0] : [0, 0, 0]);
 		} else if (row == 0 && column < NUM_MICS) {
-            var micActive = audioIn.getTarget().channels.getChild(column + 1).active.get();
-			setPadColor(row, column, micActive ? [1, .5, 0] : [.1,.1,.1]);
+            var mic = audioIn.getTarget().channels[(column + 1).toFixed()];
+            if(mic) setPadColor(row, column, mic.active ? [1, .5, 0] : [.1,.1,.1]);
 		}
 	}
 
@@ -338,7 +341,7 @@ function isTrack(row, column) {
 
 function getTrack(looperIndex, trackIndex) {
 	if (getLooper(looperIndex) == null) return null;
-	return getLooper(looperIndex).tracks.getChild(trackIndex + 1);
+    return getLooper(looperIndex).tracks[(trackIndex + 1).toFixed()];
 }
 
 function getTrackOnPad(row, column) {
